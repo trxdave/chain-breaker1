@@ -1,6 +1,7 @@
+# about/urls.py
 from django.urls import path
-from . import views
+from . import views  # Make sure this is correctly importing the views module
 
 urlpatterns = [
-    path('', views.about, name='about'),
+    path('', views.about_view, name='about'),  # Ensure this is correct
 ]
