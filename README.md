@@ -171,6 +171,7 @@ The W3C Markup Validation Service is used to validate our HTML code. This ensure
 
 Through these initiatives, **Chain Breakers** aims to serve as a go-to, no-barrier resource for awareness, education, and direct action in the fight against modern slavery and human trafficking.
 
+
 ### Acknowledgement
 
 We would like to extend our heartfelt gratitude to the following individuals and organizations for their invaluable contributions to the **Chain Breakers** project:
