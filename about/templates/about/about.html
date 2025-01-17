@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+<div class="text-center mb-5">
+    <h1 class="display-4">About Chain Breakers</h1>
+    <p class="lead">Raising awareness about human trafficking through interactive learning experiences.</p>
+</div>
+
+<!-- Team Bios -->
+<div class="container">
+    <h2 class="text-center mb-4">Meet the Team</h2>
+    <div class="row">
+        <!-- Member 1 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/noah.png' %}" class="card-img-top" alt="Member 1">
+                <div class="card-body">
+                    <h5 class="card-title">Noah Al-Samawi</h5>
+                    <p class="card-text">Front-End Developer passionate about crafting intuitive user interfaces.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Member 2 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/laura.png' %}" class="card-img-top" alt="Member 2">
+                <div class="card-body">
+                    <h5 class="card-title">Laura Hall</h5>
+                    <p class="card-text">Back-End Developer specializing in creating efficient and secure systems.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Member 3 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/david.png' %}" class="card-img-top" alt="Member 3">
+                <div class="card-body">
+                    <h5 class="card-title">David Cotter</h5>
+                    <p class="card-text">Content Specialist ensuring clear and engaging educational material.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Member 4 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/member4.jpg' %}" class="card-img-top" alt="Member 4">
+                <div class="card-body">
+                    <h5 class="card-title">Member 4</h5>
+                    <p class="card-text">Project Manager coordinating efforts to bring the vision to life.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Member 5 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/member5.jpg' %}" class="card-img-top" alt="Member 5">
+                <div class="card-body">
+                    <h5 class="card-title">Member 5</h5>
+                    <p class="card-text">Data Analyst providing insights for informed decision-making.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Member 6 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/member6.jpg' %}" class="card-img-top" alt="Member 6">
+                <div class="card-body">
+                    <h5 class="card-title">Member 6</h5>
+                    <p class="card-text">Full-Stack Developer combining front-end and back-end skills.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Vision -->
+<div class="container my-5">
+    <h2>Project Vision</h2>
+    <p>The <strong>Trafficking Scenario Simulator</strong> was built as part of a hackathon initiative to raise awareness about human trafficking through interactive learning experiences.</p>
+    <p>Our mission is to educate and empower individuals to recognize and respond to potential trafficking situations effectively, contributing to a safer society.</p>
+</div>
+
+<!-- Contact Information -->
+<div class="container my-5">
+    <h2>Contact Information</h2>
+    <p>If you have questions, feedback, or partnership opportunities, feel free to reach out:</p>
+    <ul class="list-unstyled">
+        <li><strong>Email:</strong> <a href="mailto:team@chainbreakers.com">team@chainbreakers.com</a></li>
+        <li><strong>Phone:</strong> +1 800 123 4567</li>
+        <li><strong>Social Media:</strong> <a href="https://twitter.com/chainbreakers" target="_blank">Twitter</a> | <a href="https://linkedin.com/company/chainbreakers" target="_blank">LinkedIn</a></li>
+    </ul>
+</div>
+{% endblock %}
