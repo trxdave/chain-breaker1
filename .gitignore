@@ -6,4 +6,6 @@ __pycache__/
 *.py[cod]
 node_modules/
 .github/
+*.pyc
+__pycache__/
 cloudinary_python.txt
