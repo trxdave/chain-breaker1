@@ -5,8 +5,7 @@ class Scenario(models.Model):
     description = models.TextField()
     decision_1 = models.CharField(max_length=255)
     decision_2 = models.CharField(max_length=255)
-    decision_1_outcome = models.TextField()
-    decision_2_outcome = models.TextField()
+    outcomes = models.JSONField(default=list)  # Store outcomes as a list of dictionaries
 
     def __str__(self):
-        return self.title
+        return f"Scenario: {self.title} - {self.decision_1} vs {self.decision_2}"
