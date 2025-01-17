@@ -38,7 +38,7 @@
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--accent-primary); /* Yellow for Highlight */
+    color: var(--accent-danger); /* Orange for Highlight */
 }
 
 .navbar-dark .dropdown-menu {
@@ -55,7 +55,7 @@
 
 .navbar-dark .dropdown-item:hover,
 .navbar-dark .dropdown-item:active {
-    color: var(--accent-primary); /* Yellow on Hover */
+    color: var(--accent-danger); /* Orange on Hover */
     background-color: var(--bg-neutral); /* Light Blue Background */
 }
 
@@ -77,11 +77,11 @@
 }
 
 .navbar-dark .navbar-toggler:hover {
-    background-color: var(--accent-primary); /* Yellow on Hover */
+    background-color: var(--accent-danger); /* Orange on Hover */
 }
 
 .navbar-dark .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.3); /* Matches Accent Primary */
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.3); 
 }
 
 /* Main Content Adjustment */
@@ -90,4 +90,56 @@ main {
     padding: 1rem;
     background-color: var(--bg-secondary); /* Very Light Blue for Content Background */
     color: var(--text-primary); /* Dark Gray Text for Content */
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--bg-primary);
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--bg-neutral);
+}
+
+footer p {
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+footer hr {
+    margin: 1rem 0;
+    opacity: 0.5;
+}
+
+
+footer a {
+    color: var(--text-secondary); /* Light Gray for Default Links */
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: large;
+    transition: color 0.3s ease;
+    text-decoration: none; /* No underline */
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--accent-danger) !important; 
+}
+
+footer .text-warning {
+    color: var(--accent-primary); 
+    font-weight: bold;
+}
+
+footer .text-warning:hover,
+footer .text-warning:focus {
+    color: var(--accent-danger) !important; 
+}
+
+footer .text-danger {
+    color: var(--accent-danger); 
+    font-weight: bold;
 }
