@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 
+# Import environment variables from env.py
+if os.path.exists(os.path.join(Path(__file__).resolve().parent.parent, 'env.py')):
+    import env
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,13 +28,13 @@ TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#my+pxp(lw4l&00i7uj-qgyq&nk$q6&+7rpw%c2y)vrn&5g22#'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-trxdave-chainbreaker1-gb5coigj4p6.ws.codeinstitute-ide.net',
+    '8000-trxdave-chainbreaker1-7esv1203v6r.ws.codeinstitute-ide.net',
     'chain-breaker-a367b4614472.herokuapp.com',
     '127.0.0.1',
     'localhost',
@@ -72,7 +76,7 @@ ROOT_URLCONF = 'trafficking_simulator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR], 
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
