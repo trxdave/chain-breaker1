@@ -70,7 +70,6 @@
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url("/static/images/menu.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
