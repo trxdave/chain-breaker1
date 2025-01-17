@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-trxdave-chainbreaker1-gb5coigj4p6.ws.codeinstitute-ide.net',
+    '8000-trxdave-chainbreaker1-7esv1203v6r.ws.codeinstitute-ide.net',
     'chain-breaker-a367b4614472.herokuapp.com',
     '127.0.0.1',
     'localhost',
