@@ -38,11 +38,11 @@
 
     <!-- Navigation -->
   
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--bg-primary);">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="{% static 'images/cb_logo.webp' %}" alt="Chain Breakers Logo" width="150">
+                <img src="{% static 'images/cb_logo.webp' %}" alt="Chain Breakers Logo" width="30" id="logo_font">Chain Breakers
             </a>
 
             <!-- Toggler Button -->
@@ -81,17 +81,18 @@
    
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark text-light">
+    <footer class="py-5 text-light">
         <div class="container">
             <div class="row">
                 <!-- Reporting Information -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-warning">Report Modern Slavery</h5>
+                    <h5 class="text-heading">Report Modern Slavery</h5>
                     <p>
                         <strong>UK:</strong><br>
                         Modern Slavery Helpline: <span class="text-warning">08000 121 700</span><br>
                         Police: <span class="text-warning">101</span> or <span class="text-danger">999</span> (emergency).
                     </p>
+                    <hr class="footer_hr">
                     <p>
                         <strong>EU:</strong><br>
                         National Hotlines: 
@@ -103,7 +104,7 @@
 
                 <!-- Quick Links -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-warning">Quick Links</h5>
+                    <h5 class="text-heading">Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="{% url 'home' %}" class="text-decoration-none text-light">Home</a></li>
                         <li><a href="{% url 'about' %}" class="text-decoration-none text-light">About</a></li>
@@ -115,7 +116,7 @@
 
                 <!-- Developer Info -->
                 <div class="col-md-4 mb-4">
-                    <h5 class="text-warning">About Us</h5>
+                    <h5 class="text-heading">About Us</h5>
                     <p>
                         Dedicated to combating human trafficking and modern slavery.<br>
                          <!-- Add the link to Meet the Team -->
