@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
 # This view renders the 'about.html' page
+
 def about_view(request):
     return render(request, 'about/about.html')
 
