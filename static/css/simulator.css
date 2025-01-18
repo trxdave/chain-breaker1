@@ -1,4 +1,4 @@
-/* Simulator Page Styling */
+/* Simulator Page Styling
 .simulator-container {
     margin: 20px auto;
     max-width: 1200px;
@@ -99,4 +99,39 @@
 .actions .btn-secondary:hover {
     background-color: #5a6268;
     transform: scale(1.05);
+} */
+
+#app {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#scenario {
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
