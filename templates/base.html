@@ -15,6 +15,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
 
     <!-- Title -->
     <title>Chain Breakers - End Modern Slavery and Human Trafficking</title>
@@ -37,8 +38,7 @@
 <body>
 
     <!-- Navigation -->
-
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--bg-primary);">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <!-- Logo -->
         <a class="navbar-brand" href="{% url 'home' %}">
@@ -70,43 +70,6 @@
                     <a class="nav-link {% if request.resolver_match.url_name == 'results' %}active{% endif %}" href="{% url 'results' %}">Results</a>
                 </li>
             </ul>
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="{% static 'images/cb_logo.webp' %}" alt="Chain Breakers Logo" width="150">
-            </a>
-
-            <!-- Toggler Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-
-                    <li class="nav-item"><a
-                            class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
-                            href="{% url 'home' %}">Home</a></li>
-                    <li class="nav-item"><a
-                            class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}"
-                            href="{% url 'about' %}">About</a></li>
-                    <li class="nav-item"><a
-                            class="nav-link {% if request.resolver_match.url_name == 'simulation' %}active{% endif %}"
-                            href="">Simulation</a></li>
-                    <li class="nav-item"><a
-                            class="nav-link {% if request.resolver_match.url_name == 'resources' %}active{% endif %}"
-                            href="">Resources</a></li>
-                    <li class="nav-item"><a
-                            class="nav-link {% if request.resolver_match.url_name == 'results' %}active{% endif %}"
-                            href="">Results</a></li>
-
-                </ul>
-            </div>
-
         </div>
     </div>
 </nav>
@@ -158,7 +121,7 @@
                         Dedicated to combating human trafficking and modern slavery.<br>
                         <a href="{% url 'about' %}" class="text-warning">Meet the Team</a>.
                     </p>
-                    <p>&copy; 2024 Chain Breakers. All Rights Reserved.</p>
+                    <p>&copy; 2025 Chain Breakers. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
