@@ -5,24 +5,19 @@
 
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-<main>
 <!-- Hero Section -->
  
-<div id="hero">
-    <div class="container h-100 d-flex align-items-center">
-        <div class="row w-100">
-            <!-- Cover Text Content -->
-            <div id="cover-text" class="col-lg-6 rounded shadow">
-                <h2 class="fw-bold">Chain Breakers</h2>
-                <h3>Breaking Chains, Restoring Freedom - Together Against Human Trafficking.</h3>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="{% url 'resources' %}" class="btn btn-success btn-lg px-4 me-md-2">How to Report</a>
-                </div>
-            </div>
-        </div>
+<div id="hero" class="hero-image">
+    <div id="cover-text">
+        <h2>Chain Breakers</h2>
+        <h3>Breaking Chains, Restoring Freedom:<br>
+            Together Against Human Trafficking.</h3>
+        <a href="{% url 'resources' %}" class="btn btn-success btn-lg mb-3">How to Report</a>
     </div>
 </div>
 
+
+<main>
     <!-- Introduction Section -->
     <section id="introduction" class="py-5 bg-light">
         <div class="container">
