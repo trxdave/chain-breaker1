@@ -30,35 +30,27 @@ body {
     right: 0;
     margin-bottom: 0;
     z-index: 1000;
-    background-color: var(--bg-primary); /* Dark Blue Background */
+    background-color: var(--bg-primary);
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--text-secondary); /* Light Gray for Links */
+    color: var(--text-secondary);
     letter-spacing: 1px;
     font-weight: 400;
     font-size: large;
     transition: color 0.3s ease;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link.active {
-    color: var(--accent-danger); /* Orange for Highlight */
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+    color: var(--accent-danger);
 }
 
-.navbar-dark .dropdown-menu {
-    background-color: var(--bg-secondary); /* Very Light Blue for Dropdown */
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-dark .dropdown-item {
-    color: var(--text-primary); /* Dark Gray for Items */
-    padding: 10px 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.navbar-dark .nav-link:focus {
+    outline: 2px dashed var(--accent-primary);
+    outline-offset: 2px;
 }
 
 .navbar-dark .dropdown-item:hover,
@@ -147,53 +139,37 @@ main {
   
 
 /* Footer */
-
 footer {
     background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    padding: var(--spacing-large) var(--spacing-medium);
 }
 
 footer h5 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: var(--font-large);
+    margin-bottom: var(--spacing-small);
     color: var(--bg-neutral);
 }
 
 footer p {
     line-height: 1.6;
-    color: var(--text-secondary);
+    margin-bottom: var(--spacing-small);
 }
-
-footer hr {
-    margin: 1rem 0;
-    opacity: 0.5;
-}
-
 
 footer a {
-    color: var(--text-secondary); /* Light Gray for Default Links */
-    letter-spacing: 1px;
-    font-weight: 400;
-    font-size: large;
+    color: var(--text-secondary);
     transition: color 0.3s ease;
-    text-decoration: none; /* No underline */
 }
 
-footer a:hover,
-footer a:focus {
-    color: var(--accent-danger) !important; 
+footer a:hover {
+    color: var(--accent-danger);
 }
 
-footer .text-warning {
-    color: var(--accent-primary); 
-    font-weight: bold;
+footer .row > div {
+    padding-right: var(--spacing-medium);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-footer .text-warning:hover,
-footer .text-warning:focus {
-    color: var(--accent-danger) !important; 
-}
-
-footer .text-danger {
-    color: var(--accent-danger); 
-    font-weight: bold;
+footer .row > div:last-child {
+    border-right: none;
 }
