@@ -85,6 +85,33 @@ main {
     }
 }
 
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("{% static 'images/bc_hero2.jpg' %}") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    /* Semi-transparent background overlay */
+    background-color: rgba(241, 109, 107, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2,
+#cover-text > h3 {
+    color: #fff;
+}
+
+  
+
 /* Footer */
 footer {
     background-color: var(--bg-primary);
