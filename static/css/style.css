@@ -44,6 +44,10 @@ body {
     color:var(--accent-primary);
 }
 
+.nav-link {
+    font-family: "Exo 2", Arial, sans-serif;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: var(--text-secondary);
     letter-spacing: 1px;
@@ -127,7 +131,8 @@ main {
 
 #cover-text h2 {
     font-family: "Amatic SC", Arial, sans-serif; 
-    font-size: 3rem; 
+    font-size: 3rem;
+    font-weight: bold; 
 }
 
 #cover-text h3 {
@@ -144,6 +149,19 @@ main {
     background-color: #1C1F33;
     border:#FF6F61;
 }
+/* Introduction */
+#introduction {
+    font-family: "Exo 2", Arial, sans-serif;
+    width: 90%;
+}
+
+/* Why it matters */
+
+#why-it-matters {
+    background-color: var(--nav-bg);
+    font-family: "Exo 2", Arial, sans-serif;
+    color: var(--text-secondary);
+}
 /* Buttons */
 
 .btn-report {
@@ -154,6 +172,7 @@ main {
     margin: 0 auto; 
     text-align: center;
     max-width: 300px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
 .btn-report:hover,
@@ -234,4 +253,27 @@ footer .text-warning:focus {
 footer .text-danger {
     color: var(--accent-danger); /* Red for Emergency Numbers */
     font-weight: bold;
+}
+
+@media screen and (max-width: 425px) {
+    #cover-text {
+        width: 90%; /* Cover most of the screen width */
+        bottom: 20px; /* Bring it closer to the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px 15px; /* Adjust padding for smaller screens */
+        min-height: auto; /* Remove fixed height for flexibility */
+    }
+
+    #cover-text h2 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    #cover-text h3 {
+        font-size: 1.5rem;
+    }
+
+    #cover-text .btn {
+        font-size: 1rem; /* Smaller button text */
+    }
 }
