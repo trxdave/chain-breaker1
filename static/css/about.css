@@ -1,0 +1,182 @@
+/* about.css */
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url("{% static 'images/about-hero.jpg' %}"); /* Add your own hero image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+#cover-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#cover-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#cover-text .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+/* Introduction Section */
+#introduction {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+#introduction h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#introduction p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Why It Matters Section */
+#why-it-matters {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+#why-it-matters h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#why-it-matters p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Meet the Team Section */
+#meet-the-team {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+#meet-the-team h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#meet-the-team .row {
+    margin-top: 30px;
+}
+
+#meet-the-team .col-md-4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#meet-the-team img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#meet-the-team h4 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+#meet-the-team p {
+    color: #777;
+    font-size: 1.1rem;
+}
+
+/* Call to Action Section */
+#call-to-action {
+    background-color: #28a745;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#call-to-action h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#call-to-action .btn {
+    background-color: #fff;
+    color: #28a745;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+#call-to-action .btn:hover {
+    background-color: #218838;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hero {
+        height: 300px;
+    }
+
+    #cover-text h2 {
+        font-size: 2rem;
+    }
+
+    #cover-text h3 {
+        font-size: 1.2rem;
+    }
+
+    #introduction h2, #why-it-matters h2, #meet-the-team h2 {
+        font-size: 2rem;
+    }
+
+    #introduction p, #why-it-matters p, #call-to-action p {
+        font-size: 1rem;
+    }
+
+    #meet-the-team .col-md-4 {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+
+    #meet-the-team img {
+        width: 120px;
+        height: 120px;
+    }
+}
