@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/results.css' %}">
+<div class="container mt-5">
+    <h1 class="text-center">Results</h1>
+    <p class="lead text-center">An overview of our impact in the fight against human trafficking.</p>
+
+    <!-- Success Metrics -->
+    <div class="row my-4 text-center">
+        <div class="col-md-4">
+            <h2>{{ results.success_rate }}%</h2>
+            <p>Success Rate</p>
+        </div>
+        <div class="col-md-4">
+            <h2>{{ results.cases_prevented }}</h2>
+            <p>Cases Prevented</p>
+        </div>
+        <div class="col-md-4">
+            <h2>{{ results.user_participation }}</h2>
+            <p>Users Participated</p>
+        </div>
+    </div>
+
+    <!-- Top Contributors -->
+    <div class="my-4">
+        <h3>Top Contributors</h3>
+        <ul>
+            {% for contributor in results.top_contributors %}
+            <li><a href="{{ contributor.link }}" target="_blank">{{ contributor.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Highlights -->
+    <div class="my-4">
+        <h3>Highlights</h3>
+        <ul>
+            {% for highlight in results.highlights %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock content %}
