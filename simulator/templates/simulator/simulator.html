@@ -2,19 +2,25 @@
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/simulator.css' %}">
+
 <div class="simulator-container">
-  <h1 class="simulator-title">Trafficking Scenario Simulator</h1>
-  <div class="scenarios">
+  <h1 class="page-title">Trafficking Scenario Simulator</h1>
+  <div class="scenarios-grid">
     {% for scenario in scenarios %}
-    <div class="scenario-card">
+    <div class="card">
       <h2 class="scenario-title">{{ scenario.title }}</h2>
       <p class="scenario-description">{{ scenario.description }}</p>
-      <div class="choices">
-        <a href="#" class="choice-button">Option 1: {{ scenario.decision_1 }}</a>
-        <a href="#" class="choice-button">Option 2: {{ scenario.decision_2 }}</a>
+      <div class="options">
+        <p><strong>Option 1:</strong> {{ scenario.decision_1 }}</p>
+        <p><strong>Option 2:</strong> {{ scenario.decision_2 }}</p>
+      </div>
+      <div class="actions">
+        <a href="#" class="btn btn-primary">Choose Option 1</a>
+        <a href="#" class="btn btn-secondary">Choose Option 2</a>
       </div>
     </div>
     {% endfor %}
   </div>
 </div>
 {% endblock %}
+

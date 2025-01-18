@@ -27,6 +27,11 @@ View the live site here: [Chain Breakers]()
 
 Our mission is to **inform, educate, and empower** individuals to take meaningful action against modern slavery and human trafficking. By removing barriers to information and reporting, **Chain Breakers** aspires to be a readily accessible resource for anyone committed to understanding, preventing, and stopping human trafficking.
 
+### Responsive Image
+
+To ensure that our content is accessible and visually appealing across all devices, **Chain Breakers** utilizes responsive images. This means that images on our platform automatically adjust to fit the screen size of the device being used, whether it's a smartphone, tablet, or desktop computer.
+
+
 ### Future Development Plans
 
 - **Expanded Scenario Library**: Add more nuanced situations covering various forms of trafficking and exploitation.
