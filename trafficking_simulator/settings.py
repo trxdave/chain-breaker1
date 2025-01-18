@@ -35,7 +35,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-trxdave-chainbreaker1-7esv1203v6r.ws.codeinstitute-ide.net',
-    '8000-trxdave-chainbreaker1-it1kftkgzib.ws.codeinstitute-ide.net',
+    '8000-trxdave-chainbreaker1-qwk1atwvzwp.ws.codeinstitute-ide.net',
     'chain-breaker-a367b4614472.herokuapp.com',
     '127.0.0.1',
     'localhost',
