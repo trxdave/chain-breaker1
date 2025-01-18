@@ -2,8 +2,8 @@
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/simulator.css' %}">
-
-<div class="simulator-container">
+<main class="mt-4"> 
+  <div class="simulator-container">
   <h1 class="page-title">Trafficking Scenario Simulator</h1>
   <div class="scenarios-grid">
     {% for scenario in scenarios %}
@@ -22,5 +22,6 @@
     {% endfor %}
   </div>
 </div>
+</main>
 {% endblock %}
 
