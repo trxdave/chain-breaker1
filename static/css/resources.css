@@ -1,0 +1,51 @@
+/* resources.css */
+
+/* General Page Styling */
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #004085;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #004085;
+    border-color: #003060;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
