@@ -15,7 +15,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'site.webmanifest' %}">
 
     <!-- Title -->
     <title>Chain Breakers - End Modern Slavery and Human Trafficking</title>
@@ -72,48 +71,14 @@
                     </li>
                 </ul>
             </div>
-          
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="{% static 'images/cb_logo.webp' %}" alt="Chain Breakers Logo" width="150">
-        </a>
-
-        <!-- Toggler Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}" href="{% url 'about' %}">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'simulator' %}active{% endif %}" href="{% url 'simulator' %}">Simulator</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'resources' %}active{% endif %}" href="{% url 'resources' %}">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.url_name == 'results' %}active{% endif %}" href="{% url 'results' %}">Results</a>
-                </li>
-            </ul>
-        </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="container my-5">
+   
         {% block content %}
         <!-- Dynamic content will be inserted here -->
         {% endblock content %}
-    </main>
+   
 
     <!-- Footer -->
     <footer class="py-5 bg-dark text-light">
