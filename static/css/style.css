@@ -111,7 +111,7 @@ main {
 #hero {
     height: 600px; /* Adjust height as needed */
     width: 100%;
-    background: url("../images/bc_hero2.jpg") no-repeat center center/cover;
+    background: url("/static/images/bc_hero2.jpg") no-repeat center center/cover;
     background-size: cover; /* Ensures image covers the entire area */
     margin: 0;
     padding: 0;
