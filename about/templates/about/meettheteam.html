@@ -1,100 +1,81 @@
 {% extends "base.html" %}
-
 {% load static %}
 
-{% block title %}About Us{% endblock %}
+{% block title %}Meet the Team{% endblock %}
 
 {% block content %}
+<!-- Stylesheet -->
+<link rel="stylesheet" href="{% static 'css/meettheteam.css' %}">
 
-<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<!-- Hero Section -->
+<section class="team-header">
+    <h1>Meet the Team</h1>
+    <p>We are a passionate group working together to raise awareness about human trafficking through innovative solutions.</p>
+</section>
 
-<div class="text-center mb-5">
-    <h1 class="display-4">About Chain Breakers</h1>
-    <p class="lead">Raising awareness about human trafficking through interactive learning experiences.</p>
-</div>
-
-<!-- Team Bios -->
-<div class="container">
-    <h2 class="text-center mb-4">Meet the Team</h2>
-    <div class="row">
-        <!-- Member 1 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <img src="{% static 'images/noah.png' %}" class="card-img-top" alt="Member 1">
-                <div class="card-body">
-                    <h5 class="card-title">Noah Al-Samawi</h5>
-                    <p class="card-text">Front-End Developer passionate about crafting intuitive user interfaces.</p>
+<!-- Team Section -->
+<section class="team-section">
+    <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-card">
+            <img src="{% static 'images/noah.png' %}" alt="Noah Al-Samawi">
+            <div class="card-body">
+                <h5>Noah Al-Samawi</h5>
+                <p>Front-End Developer passionate about crafting intuitive user interfaces.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
-        <!-- Member 2 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <img src="{% static 'images/laura.png' %}" class="card-img-top" alt="Member 2">
-                <div class="card-body">
-                    <h5 class="card-title">Laura Hall</h5>
-                    <p class="card-text">Back-End Developer specializing in creating efficient and secure systems.</p>
+        <!-- Team Member 2 -->
+        <div class="team-card">
+            <img src="{% static 'images/laura.png' %}" alt="Laura Hall">
+            <div class="card-body">
+                <h5>Laura Hall</h5>
+                <p>Back-End Developer specializing in creating efficient and secure systems.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
-        <!-- Member 3 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <img src="{% static 'images/david.png' %}" class="card-img-top" alt="Member 3">
-                <div class="card-body">
-                    <h5 class="card-title">David Cotter</h5>
-                    <p class="card-text">Content Specialist ensuring clear and engaging educational material.</p>
+        <!-- Team Member 3 -->
+        <div class="team-card">
+            <img src="{% static 'images/david.png' %}" alt="David Cotter">
+            <div class="card-body">
+                <h5>David Cotter</h5>
+                <p>Full-Stack Developer skilled in Django, Bootstrap, HTML, CSS, and JavaScript, focused on building user-friendly web applications.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/david-cotter-junior-software-developer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/trxdave"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
-        <!-- Member 4 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <img src="{% static 'images/member4.jpg' %}" class="card-img-top" alt="Member 4">
-                <div class="card-body">
-                    <h5 class="card-title">Member 4</h5>
-                    <p class="card-text">Project Manager coordinating efforts to bring the vision to life.</p>
+        <!-- Team Member 4 -->
+        <div class="team-card">
+            <img src="{% static 'images/riman.png' %}" alt="Riman Farhood">
+            <div class="card-body">
+                <h5>Riman Farhood</h5>
+                <p>Project Manager coordinating efforts to bring the vision to life.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
-        <!-- Member 5 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <img src="{% static 'images/member5.jpg' %}" class="card-img-top" alt="Member 5">
-                <div class="card-body">
-                    <h5 class="card-title">Member 5</h5>
-                    <p class="card-text">Data Analyst providing insights for informed decision-making.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Member 6 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <img src="{% static 'images/member6.jpg' %}" class="card-img-top" alt="Member 6">
-                <div class="card-body">
-                    <h5 class="card-title">Member 6</h5>
-                    <p class="card-text">Full-Stack Developer combining front-end and back-end skills.</p>
+        <!-- Team Member 5 -->
+        <div class="team-card">
+            <img src="{% static 'images/sonali.png' %}" alt="Sonali Patni">
+            <div class="card-body">
+                <h5>Sonali Patni</h5>
+                <p>Front-End Developer skilled in HTML, CSS, and JavaScript. Working to improve my Django skills step by step!</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sonalipatni/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/SonaliP11"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Project Vision -->
-<div class="container my-5">
-    <h2>Project Vision</h2>
-    <p>The <strong>Trafficking Scenario Simulator</strong> was built as part of a hackathon initiative to raise awareness about human trafficking through interactive learning experiences.</p>
-    <p>Our mission is to educate and empower individuals to recognize and respond to potential trafficking situations effectively, contributing to a safer society.</p>
-</div>
-
-<!-- Contact Information -->
-<div class="container my-5">
-    <h2>Contact Information</h2>
-    <p>If you have questions, feedback, or partnership opportunities, feel free to reach out:</p>
-    <ul class="list-unstyled">
-        <li><strong>Email:</strong> <a href="mailto:team@chainbreakers.com">team@chainbreakers.com</a></li>
-        <li><strong>Phone:</strong> +1 800 123 4567</li>
-        <li><strong>Social Media:</strong> <a href="https://twitter.com/chainbreakers" target="_blank">Twitter</a> | <a href="https://linkedin.com/company/chainbreakers" target="_blank">LinkedIn</a></li>
-    </ul>
-</div>
+</section>
 {% endblock %}
