@@ -178,6 +178,32 @@ main {
     color: var(--accent-danger);
 }
 
+/* Reporting Page */
+
+#reporting-heading {
+    color: var(--accent-danger)
+}
+
+#reporting-image {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#reporting-intro {
+    color: var(--text-primary)
+}
+
+.reporting-card {
+    background-color: var(--nav-bg);
+}
+
+.reporting-card-text {
+    color:var(--text-secondary);
+}
+
 /* Buttons */
 
 .btn-report {
