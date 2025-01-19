@@ -6,62 +6,94 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 <!-- Hero Section -->
- 
+
 <div id="hero" class="hero-image">
     <div id="cover-text">
         <h2>Chain Breakers</h2>
         <h3>Breaking Chains, Restoring Freedom:<br>
             Together Against Human Trafficking.</h3>
-        <a href="{% url 'resources' %}" class="btn btn-report btn-lg mb-3 align-items-center">How to Report</a>
+        <a href="{% url 'resources' %}" class="btn btn-report btn-lg my-3 align-items-center">How to Report</a>
     </div>
 </div>
 
 
 <main>
-<!-- Introduction Section -->
-<section id="introduction" class="py-5 bg-light mt-1">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Circular Image -->
-            <div class="col-md-4 text-center">
-                <img src="{% static 'images/handschains.jpg' %}" alt="Chain Breakers Logo" class="img-fluid rounded-circle shadow-sm" style="max-width: 200px;">
-            </div>
-            <!-- Content -->
-            <div class="col-md-8">
-                <h2 class="mb-4">About Chain Breakers</h2>
-                <p>
-                    At <strong>Chain Breakers</strong>, we’re dedicated to shedding light on the realities of human
-                    trafficking through education, awareness, and action.
-                    Our interactive Trafficking Scenario Simulator is designed to equip individuals with the tools they need
-                    to recognize warning signs, make informed
-                    decisions, and protect themselves and others from exploitation. By fostering understanding and
-                    building resilience, we aim to break the chains of exploitation and empower communities to stand united
-                    against human trafficking.
-                </p>
+    <!-- Introduction Section -->
+    <section id="introduction" class="py-5 bg-light mt-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Circular Image -->
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="{% static 'images/handschains.jpg' %}" 
+                         alt="Hands holding a chain"
+                         class="img-fluid rounded-circle shadow-sm" style="max-width: 200px;">
+                </div>
+                <!-- Content -->
+                <div class="col-md-8 text-center text-md-start">
+                    <h2 class="mb-4">About Chain Breakers</h2>
+                    <p>
+                        At <strong>Chain Breakers</strong>, we’re dedicated to shedding light on the realities of human
+                        trafficking through education, awareness, and action.
+                        Our interactive Trafficking Scenario Simulator is designed to equip individuals with the tools
+                        they need
+                        to recognize warning signs, make informed
+                        decisions, and protect themselves and others from exploitation. By fostering understanding and
+                        building resilience, we aim to break the chains of exploitation and empower communities to stand
+                        united
+                        against human trafficking.
+                    </p>
+                    <a href="{% url 'simulator' %}" class="btn btn-report btn-lg mt-4 align-items-center ">Try the
+                        Scenario Simulator</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-
+    </section>
+    
     <!-- Why This Matters Section -->
     <section id="why-it-matters" class="py-5">
         <div class="container">
-            <h2 class="mb-4">Why This Matters</h2>
-            <p>
-                Human trafficking is a pervasive and devastating issue that affects millions of people worldwide.
-                Victims are often coerced,
-                deceived, or manipulated into situations of forced labor, sexual exploitation, or domestic servitude. It
-                happens in every country,
-                to people of all ages, and across all walks of life.
-            </p>
-            <p>
-                At <strong>Chain Breakers</strong>, we believe that raising awareness and providing accessible,
-                practical tools is essential to
-                combating modern slavery. Together, we can create a world where everyone has the freedom to live without
-                fear of exploitation.
-            </p>
+            <h2 class="text-center mb-5" style="color:#FF6F61;">Why It Matters</h2>
+            <div class="row gy-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="{% static 'images/globe.jpg' %}" class="card-img-top" alt="Global Impact">
+                        <div class="card-body">
+                            <h5 class="card-title">Global Impact</h5>
+                            <p class="card-text">
+                                Human trafficking is a pervasive issue that affects millions worldwide. It knows no
+                                borders and affects individuals of all ages and backgrounds.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="{% static 'images/eyes.jpg' %}" class="card-img-top" alt="Forms of Exploitation">
+                        <div class="card-body">
+                            <h5 class="card-title">Forms of Exploitation</h5>
+                            <p class="card-text">
+                                Victims face forced labor, sexual exploitation, and domestic servitude. They are
+                                coerced, deceived, and manipulated into these situations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="{% static 'images/mission.jpg' %}" class="card-img-top" alt="Our Mission">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Mission</h5>
+                            <p class="card-text">
+                                At <strong>Chain Breakers</strong>, we provide tools and raise awareness to combat
+                                modern slavery. Together, we can build a future free of exploitation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -69,14 +101,25 @@
     <section id="statistics" class="py-5 bg-light">
         <div class="container">
             <h2 class="mb-4 text-center">The Reality of Human Trafficking: By the Numbers</h2>
-
-            <!-- World Infographic with Description -->
-            <div class="row align-items-center mb-5">
+            <div class="row">
+                <!-- EU and UK Statistics -->
                 <div class="col-md-6 text-center">
-                    <img src="{% static 'images/world_statistics.png' %}" alt="World Statistics on Human Trafficking"
-                        class="img-fluid rounded">
+                    <img src="{% static 'images/uk_eu_statistics.png' %}"
+                        alt="EU and UK Statistics on Human Trafficking" class="img-fluid rounded mb-3">
+                    <h3>EU and UK Statistics</h3>
+                    <p>
+                        In the UK, an estimated <strong>136,000 people</strong> live in modern slavery, while the EU
+                        reports
+                        over <strong>14,000 registered victims annually</strong>. These statistics emphasize the
+                        significant
+                        impact of trafficking within Europe and the importance of localized efforts to combat it.
+                    </p>
                 </div>
-                <div class="col-md-6">
+
+                <!-- Global Statistics -->
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/global_statistics.png' %}" alt="World Statistics on Human Trafficking"
+                        class="img-fluid rounded mb-3">
                     <h3>Global Statistics</h3>
                     <p>
                         Human trafficking is a global crisis affecting over <strong>50 million people</strong>
@@ -88,39 +131,35 @@
                     </p>
                 </div>
             </div>
-
-            <!-- EU/UK Infographic with Description -->
-            <div class="row align-items-center">
-                <div class="col-md-6 order-md-2 text-center">
-                    <img src="{% static 'images/uk_eu_statistics.png' %}"
-                        alt="EU and UK Statistics on Human Trafficking" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6 order-md-1">
-                    <h3>EU and UK Statistics</h3>
-                    <p>
-                        In the UK, an estimated <strong>136,000 people</strong> live in modern slavery, while the EU
-                        reports
-                        over <strong>14,000 registered victims annually</strong>. These statistics emphasize the
-                        significant
-                        impact of trafficking within Europe and the importance of localized efforts to combat it.
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- Call to Action Section -->
-    <section class="py-5 text-center">
+    <section class="py-5 text-center bg-dark text-light">
         <div class="container">
-            <h2 class="mb-4">Take Action</h2>
+            <h2 class="mb-4" style="color:#FF6F61" ;>Take Action</h2>
             <p class="mb-4">
-                Ready to learn more and make a difference? Explore our <strong>Trafficking Scenario Simulator</strong>
-                and discover how your decisions
-                can help protect yourself and others.
+                Ready to make a difference? Explore our <strong>Trafficking Scenario Simulator</strong> and discover how
+                your decisions
+                can protect yourself and others from exploitation. Together, we can break the chains of modern slavery.
             </p>
-            <a href="#" class="btn btn-primary btn-lg">Explore the Simulator</a>
+            <div class="row justify-content-center">
+                <!-- Call to Action Buttons -->
+                <div class="col-md-8">
+                    <a href="{% url 'simulator' %}" class="btn btn-simulator btn-lg btn-block m-3">Try the
+                        Simulator</a>
+                    <a href="{% url 'resources' %}" class="btn btn-resources btn-lg btn-block m-3">Learn More</a>
+                </div>
+            </div>
+            <!-- Highlighted Statistic -->
+            <div class="mt-4">
+                <h4>Every decision matters.</h4>
+                <p>Join the fight against trafficking and help protect the <strong>50 million victims</strong>
+                    worldwide.</p>
+            </div>
         </div>
     </section>
+
 
 </main>
 

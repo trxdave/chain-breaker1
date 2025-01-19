@@ -18,10 +18,22 @@
     --accent-danger: #FF6F61; /* Red-Orange */
 }
 
-body {
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    font-family:'Raleway', Arial, Helvetica, sans-serif;
 }
+
+h1, h2 {
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+}
+
 
 /* Navbar */
 .navbar {
@@ -160,8 +172,38 @@ main {
 #why-it-matters {
     background-color: var(--nav-bg);
     font-family: "Exo 2", Arial, sans-serif;
-    color: var(--text-secondary);
 }
+
+.why-h2 {
+    color: var(--accent-danger);
+}
+
+/* Reporting Page */
+
+#reporting-heading {
+    color: var(--accent-danger)
+}
+
+#reporting-image {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#reporting-intro {
+    color: var(--text-primary)
+}
+
+.reporting-card {
+    background-color: var(--nav-bg);
+}
+
+.reporting-card-text {
+    color:var(--text-secondary);
+}
+
 /* Buttons */
 
 .btn-report {
@@ -177,9 +219,30 @@ main {
 
 .btn-report:hover,
 .btn-report:active {
-    background-color: var(--accent-secondary);
+    background-color: var(--nav-bg);
+    color: var(--text-secondary);
     transform: scale(1.1); 
 }
+
+.btn-simulator {
+    background-color: var(--accent-danger);
+    color:var(--nav-bg);
+}
+
+.btn-resources {
+    background-color: var(--accent-secondary);
+    color:var(--text-secondary)
+}
+
+.btn-simulator:hover,
+.btn-simulator:active,
+.btn-resources:hover,
+.btn-resources:active {
+    background-color: var(--text-primary);
+    color:var(--accent-primary);
+    transform: scale(1.1); 
+}
+
 
   
 
