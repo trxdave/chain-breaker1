@@ -315,7 +315,7 @@ footer .text-warning:focus {
 }
 
 footer .text-danger {
-    color: var(--accent-danger); /* Red for Emergency Numbers */
+    color: var(--text-secondary); 
     font-weight: bold;
 }
 
