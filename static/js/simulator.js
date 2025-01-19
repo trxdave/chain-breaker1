@@ -28,12 +28,18 @@ document.addEventListener("DOMContentLoaded", function () {
     function showDashboard() {
         dashboard.style.display = "block";
         scenarioView.style.display = "none";
-        scenarioList.innerHTML = "";
+        scenarioList.innerHTML = ""; // Clear existing content
+    
+        const row1 = document.createElement("div");
+        row1.className = "row justify-content-center mb-4";
+        
+        const row2 = document.createElement("div");
+        row2.className = "row justify-content-center";
     
         scenarios.forEach((scenario, index) => {
-            const card = document.createElement("div");
-            card.className = "col-md-6 mb-4 scenario-card";
-            card.innerHTML = `
+            const col = document.createElement("div");
+            col.className = "col-md-4 mb-4 d-flex justify-content-center";
+            col.innerHTML = `
                 <img 
                     src="/static/images/scenario-${index + 1}.jpg" 
                     alt="Scenario ${index + 1}" 
@@ -42,10 +48,20 @@ document.addEventListener("DOMContentLoaded", function () {
                 >
             `;
     
-            card.querySelector('img').addEventListener("click", () => showScenario(index));
-            scenarioList.appendChild(card);
+            col.querySelector('img').addEventListener("click", () => showScenario(index));
+            
+            // Add first 3 to row1, rest to row2
+            if (index < 3) {
+                row1.appendChild(col);
+            } else {
+                row2.appendChild(col);
+            }
         });
+    
+        scenarioList.appendChild(row1);
+        scenarioList.appendChild(row2);
     }
+    
     
 
     function showScenario(index) {
