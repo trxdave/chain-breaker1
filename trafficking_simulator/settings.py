@@ -39,6 +39,7 @@ ALLOWED_HOSTS = [
     'chain-breaker-a367b4614472.herokuapp.com',
     '127.0.0.1',
     'localhost',
+    '8000-trxdave-chainbreaker1-twm17iux8ln.ws-eu117.gitpod.io',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
