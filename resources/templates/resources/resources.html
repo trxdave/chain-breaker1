@@ -2,22 +2,52 @@
 {% load static %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/resources.css' %}">
-<div class="container mt-5">
-    <h1 class="mb-4">Resources</h1>
-    <p>Explore valuable resources to learn more about combating human trafficking and modern slavery:</p>
 
-    <div class="row">
-        {% for resource in resources %}
-        <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">{{ resource.title }}</h5>
-                    <p class="card-text">{{ resource.description }}</p>
-                    <a href="{{ resource.link }}" class="btn btn-primary" target="_blank">Learn More</a>
-                </div>
+<main>
+    <!-- Introduction Section -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center my-4 mb-md-0">
+                <img id="reporting-image" src="{% static 'images/resources.jpg' %}" alt="Man holding globe linking resources">
+            </div>
+            <!-- Heading and Introductory Text -->
+            <div class="col-md-8">
+                <h1 id="resources-header" class="text-center text-md-start display-4 mb-4">Resources</h1>
+                <p class="lead text-center text-md-start mb-4">
+                    Explore valuable resources to learn more about combating human trafficking and modern slavery. Gain knowledge and take steps to make a difference.
+                </p>
             </div>
         </div>
-        {% endfor %}
     </div>
-</div>
+
+    <!-- Video Section -->
+    <div class="mt-5">
+        <h3 class="text-center text-primary">Learn More About Human Trafficking</h3>
+        <div class="text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gETAfiVZwBc"
+                title="Human Trafficking Awareness Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Resources Section -->
+    <div class="container mt-5">
+        <h2 class="text-primary mb-4">Valuable Resources</h2>
+        <div class="row">
+            {% for resource in resources %}
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ resource.title }}</h5>
+                        <p class="card-text">{{ resource.description }}</p>
+                        <a href="{{ resource.link }}" class="btn btn-resources" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
 {% endblock content %}

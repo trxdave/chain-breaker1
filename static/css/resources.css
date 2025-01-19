@@ -1,51 +1,75 @@
-/* resources.css */
+:root {
+    /* Background Colors */
+    --nav-bg: #1C1F33; /* Dark Dark Blue-Black */
+    --bg-primary: #00509E; /* Dark Blue */
+    --bg-secondary: #F5F9FF; /* Very Light Blue */
+    --bg-neutral: #B3DFF2; /* Light Blue */
 
-/* General Page Styling */
-.container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    /* Text Colors */
+    --text-primary: #4F4F4F; /* Dark Gray */
+    --text-secondary: #D6D9E0; /* Light Gray */
+    --text-muted: #017374; /* Teal */
+
+    /* Accent Colors */
+    --accent-primary: #FFC107; /* Yellow */
+    --accent-secondary: #2C85FD; /* Bright Blue */
+    --accent-danger: #FF6F61; /* Red-Orange */
 }
+
+
+
+h1, h2 {
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: var(--accent-danger);
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+}
+
+#resources-header {
+    color: #FF6F61 !important; 
+}
+
 
 /* Card Styling */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    color:var(--text-secondary);
+    border-radius: 15px;
+    background-color: var(--nav-bg)!important; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+
 }
 
-.card-title {
-    font-size: 1.25rem;
+.card h5 {
+    margin-bottom: 1rem;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    color: var(--accent-primary);
+    text-decoration: none;
     font-weight: bold;
-    color: #333;
+    transition: color 0.3s ease;
 }
 
-.card-text {
-    font-size: 1rem;
-    color: #666;
+.card a:hover,
+.card a:focus {
+    color: var(--accent-danger);
+    text-decoration: none;
 }
 
-/* Button Styling */
-.btn-primary {
-    background-color: #0056b3;
-    border-color: #004085;
-    color: #fff;
-    transition: background-color 0.3s, border-color 0.3s;
-}
 
-.btn-primary:hover {
-    background-color: #004085;
-    border-color: #003060;
-}
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-    .card {
-        margin-bottom: 1.5rem;
-    }
-}

@@ -1,72 +1,134 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/results.css' %}">
-<<<<<<< HEAD
-<main class="mt-4"> 
-=======
-<main class="mt-4">
->>>>>>> f42df2e31f2dd628d149d5ae894973b73cbb9a7e
-<div class="container mt-5">
-    <h1 class="text-center">Reporting Modern Slavery</h1>
-    <p class="lead text-center">Help fight human trafficking by reporting suspicious activities. Below are important contact details for reporting modern slavery in the UK and EU.</p>
+<link rel="stylesheet" href="{% static 'css/reporting.css' %}">
 
-    <!-- Reporting Information for UK and EU -->
-    <div class="row">
-        <!-- UK Reporting Info -->
-        <div class="col-md-6 mb-4">
-            <h5 class="text-warning">Report Modern Slavery (UK)</h5>
-            <p>
-                <strong>Modern Slavery Helpline:</strong><br>
-                <span class="text-warning">08000 121 700</span><br>
-                <strong>Police:</strong><br>
-                <span class="text-warning">101</span> or <span class="text-danger">999</span> (emergency).
-            </p>
-        </div>
+<main id="reporting-modern-slavery" class="mt-4">
 
-        <!-- EU Reporting Info -->
-        <div class="col-md-6 mb-4">
-            <h5 class="text-warning">Report Modern Slavery (EU)</h5>
-            <p>
-                <strong>National Hotlines:</strong><br>
-                <a href="https://home-affairs.ec.europa.eu/policies/internal-security/organised-crime-and-human-trafficking/together-against-trafficking-human-beings/national-hotlines_en" 
-                    class="text-warning" target="_blank" rel="noopener noreferrer">Click Here</a><br>
-                <strong>Emergency:</strong> <span class="text-danger">112</span>.
-            </p>
-        </div>
+    <div class="container mt-5">
+        <!-- Heading Section -->
+        <section id="reporting-heading">
+            <div class="row align-items-center">
+                <!-- Circular Image -->
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img id="reporting-image" src="{% static 'images/phone.jpg' %}" alt="Woman making phone call">
+                </div>
+                <!-- Heading and Introductory Text -->
+                <div class="col-md-8">
+                    <h1 id="reporting-title" class="text-center text-md-start display-4 mb-4" style="color:#FF6F61" ;>
+                        Reporting Modern Slavery
+                    </h1>
+                    <p id="reporting-intro" class="lead text-center text-md-start mb-5">
+                        Help fight human trafficking by reporting suspicious activities. Below are important contact
+                        details for reporting modern slavery in the UK and EU.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reporting Information Section -->
+        <section id="reporting-info">
+            <div class="row">
+                <!-- UK Reporting Info -->
+                <div id="uk-reporting" class="col-md-6 my-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body reporting-card">
+                            <h5 class="card-title text-warning"><i class="fas fa-phone-alt"></i> Report Modern Slavery
+                                (UK)
+                            </h5>
+                            <p class="card-text reporting-card-text">
+                                <strong>Modern Slavery Helpline:</strong><br>
+                                <span class="text-warning">08000 121 700</span><br>
+                                <strong>Police:</strong><br>
+                                <span class="text-warning">101</span> or <span class="text-danger">999</span>
+                                (emergency).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EU Reporting Info -->
+                <div id="eu-reporting" class="col-md-6 my-4">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body reporting-card">
+                            <h5 class="card-title text-warning"><i class="fas fa-globe"></i> Report Modern Slavery (EU)
+                            </h5>
+                            <p class="card-text reporting-card-text">
+                                <strong>National Hotlines:</strong><br>
+                                <a href="https://home-affairs.ec.europa.eu/policies/internal-security/organised-crime-and-human-trafficking/together-against-trafficking-human-beings/national-hotlines_en"
+                                    class="text-warning" target="_blank" rel="noopener noreferrer">Click Here</a><br>
+                                <strong>Emergency:</strong> <span class="text-danger">112</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Information Section -->
+        <section id="additional-info" class="bg-light py-5 px-4 rounded shadow-sm">
+            <div class="container">
+                <!-- Title and Intro -->
+                <div class="mx-auto mb-5">
+                    <h4 id="additional-info-title" class="mb-2">Additional Information</h4>
+                    <p id="additional-info-intro">
+                        You can also report modern slavery and human trafficking anonymously through the following
+                        channels.
+                        Your contribution can make a significant difference in protecting vulnerable individuals.
+                    </p>
+                </div>
+
+                <!-- Links and Resources -->
+                <div class="row">
+                    <!-- Useful Links -->
+                    <div id="useful-links" class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body links-card">
+                                <h5 class="card-title"><i class="fas fa-link"></i> Useful Links</h5>
+                                <ul>
+                                    <li><a href="https://www.gov.uk/government/publications/modern-slavery-an-introduction-to-the-legislation"
+                                            target="_blank">UK Modern Slavery Legislation</a></li>
+                                    <li><a href="https://www.unodc.org/unodc/en/human-trafficking/what-is-human-trafficking.html"
+                                            target="_blank">United Nations on Human Trafficking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resources -->
+                    <div id="resources-links" class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body resources-card">
+                                <h5 class="card-title"><i class="fas fa-hands-helping"></i> Resources</h5>
+                                <ul>
+                                    <li><a href="https://www.antislavery.org/" target="_blank">Anti-Slavery
+                                            International</a></li>
+                                    <li><a href="https://www.thehelpline.org.uk/" target="_blank">The Human Trafficking
+                                            Foundation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stay Informed -->
+                    <div id="stay-informed" class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body informed-card">
+                                <h5 class="card-title"><i class="fas fa-bullhorn"></i> Stay Informed</h5>
+                                <ul>
+                                    <li><a href="https://www.nationalcrimeagency.gov.uk/what-we-do/crime-threats/modern-slavery"
+                                            target="_blank">Modern Slavery: National Crime Agency</a></li>
+                                    <li><a href="https://www.facebook.com/EndSlaveryNow" target="_blank">Follow End
+                                            Slavery Now</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
-
-    <!-- Footer-like Section (Can be adjusted to include other helpful info) -->
-    <div class="my-5">
-        <h4>Additional Information</h4>
-        <p>
-            You can also report modern slavery and human trafficking anonymously through the following channels. Your contribution can make a significant difference in protecting vulnerable individuals.
-        </p>
-
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <h5>Useful Links</h5>
-                <ul>
-                    <li><a href="https://www.gov.uk/government/publications/modern-slavery-an-introduction-to-the-legislation" target="_blank" class="text-warning">UK Modern Slavery Legislation</a></li>
-                    <li><a href="https://www.unodc.org/unodc/en/human-trafficking/what-is-human-trafficking.html" target="_blank" class="text-warning">United Nations on Human Trafficking</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 mb-4">
-                <h5>Resources</h5>
-                <ul>
-                    <li><a href="https://www.antislavery.org/" target="_blank" class="text-warning">Anti-Slavery International</a></li>
-                    <li><a href="https://www.thehelpline.org.uk/" target="_blank" class="text-warning">The Human Trafficking Foundation</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 mb-4">
-                <h5>Stay Informed</h5>
-                <ul>
-                    <li><a href="https://www.nationalcrimeagency.gov.uk/what-we-do/crime-threats/modern-slavery" target="_blank" class="text-warning">Modern Slavery: National Crime Agency</a></li>
-                    <li><a href="https://www.facebook.com/EndSlaveryNow" target="_blank" class="text-warning">Follow End Slavery Now</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 </main>
+
 {% endblock content %}

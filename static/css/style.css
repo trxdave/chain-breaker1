@@ -37,7 +37,6 @@ h3, h4, h5, h6 {
 
 /* Navbar */
 .navbar {
-    position: fixed;
     background-color:var(--nav-bg);
     top: 0;
     left: 0;
@@ -68,19 +67,21 @@ h3, h4, h5, h6 {
     transition: color 0.3s ease;
 }
 
-.navbar-dark .nav-link:hover,
 .navbar-dark .nav-link.active {
-    color: var(--accent-danger);
+    color: var(--accent-primary);
+    border-bottom: 2px solid var(--accent-primary);
+
 }
 
-.navbar-dark .nav-link:focus {
-    outline: 2px dashed var(--accent-primary);
-    outline-offset: 2px;
+.navbar-dark .nav-link:focus,
+.navbar-dark .nav-link:hover {
+    font-style: italic;
+    color: var(--accent-primary);
 }
 
 .navbar-dark .dropdown-item:hover,
 .navbar-dark .dropdown-item:active {
-    color: var(--accent-danger); /* Orange on Hover */
+    color: var(--accent-primary); /* Yellow on Hover */
     background-color: var(--bg-neutral); /* Light Blue Background */
 }
 
@@ -101,12 +102,12 @@ h3, h4, h5, h6 {
     height: 50px;
 }
 
-.navbar-dark .navbar-toggler:hover {
-    background-color: var(--accent-danger); /* Orange on Hover */
+.navbar-toggler:hover {
+    background-color: var(--nav-bg); /* Hiding the border on Hover */
 }
 
-.navbar-dark .navbar-toggler:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.3); 
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem var(--nav-bg);  /* Hiding the border on focus */
 }
 
 /* Main Content Adjustment */
@@ -176,6 +177,32 @@ main {
 
 .why-h2 {
     color: var(--accent-danger);
+}
+
+/* Reporting Page */
+
+#reporting-heading {
+    color: var(--accent-danger)
+}
+
+#reporting-image {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#reporting-intro {
+    color: var(--text-primary)
+}
+
+.reporting-card {
+    background-color: var(--nav-bg);
+}
+
+.reporting-card-text {
+    color:var(--text-secondary);
 }
 
 /* Buttons */
