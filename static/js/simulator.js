@@ -26,26 +26,37 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function showDashboard() {
+        // Show the dashboard and hide the scenario view
         dashboard.style.display = "block";
         scenarioView.style.display = "none";
+    
+        // Clear any existing content in the scenario list
         scenarioList.innerHTML = "";
     
+        // Dynamically generate cards for each scenario
         scenarios.forEach((scenario, index) => {
+            // Create a card container for each scenario
             const card = document.createElement("div");
-            card.className = "col-md-6 mb-4 scenario-card";
+            card.className = "scenario-card";
+    
+            // Add image and styling for each card
             card.innerHTML = `
                 <img 
                     src="/static/images/scenario-${index + 1}.jpg" 
                     alt="Scenario ${index + 1}" 
-                    class="img-fluid scenario-image" 
+                    class="scenario-image" 
                     data-scenario-index="${index}"
                 >
             `;
     
-            card.querySelector('img').addEventListener("click", () => showScenario(index));
+            // Add click event to show the scenario when the image is clicked
+            card.querySelector("img").addEventListener("click", () => showScenario(index));
+    
+            // Append the card to the scenario list container
             scenarioList.appendChild(card);
         });
     }
+    
     
 
     function showScenario(index) {
