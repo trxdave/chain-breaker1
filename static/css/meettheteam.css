@@ -77,10 +77,12 @@ body {
 }
 
 .team-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-bottom: 3px solid var(--accent-primary);
+    width: 100%; /* Ensures the image fills the width of the card */
+    height: 280px; /* Increases height for better visibility */
+    object-fit: cover; /* Ensures the image fills the dimensions without stretching */
+    object-position: top; /* Keeps the head centered and visible */
+    border-bottom: 3px solid var(--accent-primary); /* Keeps the border style */
+    border-radius: 5px 5px 0 0; /* Rounded top corners for better aesthetics */
 }
 
 .team-card .card-body {
