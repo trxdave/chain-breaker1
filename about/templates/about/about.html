@@ -6,90 +6,88 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <link rel="stylesheet" href="{% static 'css/about.css' %}">
 
-<!-- Hero Section -->
-<div id="hero" class="hero-image">
-    <div id="cover-text">
-        <h2>Chain Breakers</h2>
-        <h3>Breaking Chains, Restoring Freedom:<br>
-            Together Against Human Trafficking.</h3>
-        <a href="{% url 'resources' %}" class="btn btn-success btn-lg mb-3">How to Report</a>
-    </div>
-</div>
-
-<main>
-    <!-- Introduction Section -->
-    <section id="introduction" class="py-5 bg-light mt-1">
-        <div class="container">
-            <h2 class="mb-4">About Chain Breakers</h2>
-            <p>
-                At <strong>Chain Breakers</strong>, we’re dedicated to shedding light on the realities of human
-                trafficking through education, awareness, and action.
-                Our interactive Trafficking Scenario Simulator is designed to equip individuals with the tools they need
-                to recognize warning signs, make informed decisions, and protect themselves and others from exploitation.
-                By fostering understanding and building resilience, we aim to break the chains of exploitation and empower communities to stand united against human trafficking.
-            </p>
-        </div>
+<main class="container py-5 mt-5">
+    <section id="about">
+        <h1 class="mb-4">About Chain Breakers</h1>
+        <p>
+            <strong>Welcome to Chain Breakers!</strong>
+            We are <strong>Hack to Hope</strong>, and this project was created as part of the <strong>"Code to Protect"
+                hackathon</strong> in January 2025, hosted by Code Institute.
+            This hackathon aligns with <strong>National Slavery and Human Trafficking Prevention Month</strong>, and our
+            goal is to shine a light on the realities of human trafficking while empowering communities to recognize and
+            respond to potential red flags.
+        </p>
+        <p>
+            At Chain Breakers, we aim to foster understanding, raise awareness, and equip individuals with tools to take
+            meaningful action against human trafficking.
+            By leveraging education and accessible resources, we believe in the power of knowledge to prevent
+            exploitation and protect vulnerable individuals.
+        </p>
     </section>
 
-    <!-- Why This Matters Section -->
-    <section id="why-it-matters" class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Why This Matters</h2>
-            <p>
-                Human trafficking is a pervasive and devastating issue that affects millions of people worldwide.
-                Victims are often coerced, deceived, or manipulated into situations of forced labor, sexual exploitation, or domestic servitude.
-                It happens in every country, to people of all ages, and across all walks of life.
-            </p>
-            <p>
-                At <strong>Chain Breakers</strong>, we believe that raising awareness and providing accessible, practical tools is essential to combating modern slavery.
-                Together, we can create a world where everyone has the freedom to live without fear of exploitation.
-            </p>
-        </div>
+    <section id="what-we-do" class="py-5">
+        <h2 class="mb-4">What We Do</h2>
+        <p>
+            Chain Breakers is a <strong>barrier-free platform</strong> dedicated to raising awareness about modern
+            slavery and human trafficking.
+            We prioritize accessibility and inclusivity, requiring no accounts or logins to access critical information.
+            Our primary mission is to <strong>inform, educate, and empower individuals</strong> to recognize warning
+            signs, take preventive action, and assist those in need.
+        </p>
+        <h3 class="mt-4">Key Features</h3>
+        <ul>
+            <li><strong>Realistic Scenarios:</strong> Engage with interactive, situation-based examples designed to
+                highlight common red flags and forms of exploitation.</li>
+            <li><strong>Educational Resources:</strong> Explore infographics, statistics, and practical tools to deepen
+                your understanding of human trafficking.</li>
+            <li><strong>Open Access:</strong> All content on Chain Breakers is free and publicly available—no sign-ups,
+                no barriers.</li>
+            <li><strong>Responsive Design:</strong> Access our resources seamlessly on any browser or device, anytime
+                and anywhere.</li>
+        </ul>
     </section>
 
-    <!-- Statistics Section -->
-    <section id="statistics" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="mb-4 text-center">The Reality of Human Trafficking: By the Numbers</h2>
-
-            <div class="row align-items-center mb-5">
-                <div class="col-md-6 text-center">
-                    <img src="{% static 'images/world_statistics.png' %}" alt="World Statistics on Human Trafficking" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6">
-                    <h3>Global Statistics</h3>
-                    <p>
-                        Human trafficking is a global crisis affecting over <strong>50 million people</strong> worldwide.
-                        The industry generates <strong>$150 billion annually</strong>, exploiting vulnerable individuals for forced labor and sexual exploitation.
-                        These figures highlight the urgent need for global awareness and action.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-md-6 order-md-2 text-center">
-                    <img src="{% static 'images/uk_eu_statistics.png' %}" alt="EU and UK Statistics on Human Trafficking" class="img-fluid rounded">
-                </div>
-                <div class="col-md-6 order-md-1">
-                    <h3>EU and UK Statistics</h3>
-                    <p>
-                        In the UK, an estimated <strong>136,000 people</strong> live in modern slavery, while the EU reports over <strong>14,000 registered victims annually</strong>.
-                        These statistics emphasize the significant impact of trafficking within Europe and the importance of localized efforts to combat it.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <section id="why-this-matters" class="py-5 bg-light">
+        <h2 class="mb-4">Why This Matters</h2>
+        <p>
+            Human trafficking is a pervasive and hidden crisis affecting millions globally, including in the UK and EU.
+            By providing actionable knowledge and accessible tools, we aim to break the cycle of exploitation and
+            empower individuals to create a safer future.
+        </p>
+        <h3 class="mt-4">Key Statistics</h3>
+        <h4>Global Statistics</h4>
+        <ul>
+            <li><strong>50 million people</strong> worldwide are trapped in modern slavery (<a
+                    href="https://www.globalslaveryindex.org/" target="_blank">Global Slavery Index, 2022</a>).</li>
+            <li>Human trafficking generates <strong>$150 billion annually</strong>, with <strong>$99 billion</strong>
+                coming from sexual exploitation (<a href="https://www.ilo.org/" target="_blank">International Labour
+                    Organization, 2014</a>).</li>
+            <li><strong>1 in 4 victims</strong> globally is a child (<a href="https://www.ilo.org/" target="_blank">ILO,
+                    2017</a>).</li>
+        </ul>
+        <h4>UK & EU Statistics</h4>
+        <ul>
+            <li>In the UK, an estimated <strong>136,000 people</strong> live in modern slavery (<a
+                    href="https://www.globalslaveryindex.org/" target="_blank">Global Slavery Index, 2022</a>).</li>
+            <li>Over <strong>14,000 victims</strong> are registered annually in the EU (<a href="https://ec.europa.eu/"
+                    target="_blank">European Commission, 2020</a>).</li>
+            <li><strong>92% of EU trafficking victims</strong> are exploited for sexual or forced labor (<a
+                    href="https://ec.europa.eu/" target="_blank">European Commission, 2020</a>).</li>
+        </ul>
+        <p>To learn more about these statistics and their sources, visit our <a href="/statistics">Statistics Page</a>.
+        </p>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="py-5 text-center">
-        <div class="container">
-            <h2 class="mb-4">Take Action</h2>
-            <p class="mb-4">
-                Ready to learn more and make a difference? Explore our <strong>Trafficking Scenario Simulator</strong> and discover how your decisions can help protect yourself and others.
-            </p>
-            <a href="#" class="btn btn-primary btn-lg">Explore the Simulator</a>
-        </div>
+    <section id="our-mission" class="py-5">
+        <h2 class="mb-4">Our Mission</h2>
+        <p>
+            Our mission is simple: To provide <strong>accessible knowledge</strong> and tools that empower individuals
+            and communities to take action against human trafficking.
+            By removing barriers to information, Chain Breakers aspires to be a <strong>trusted resource</strong> for
+            anyone committed to preventing modern slavery and supporting victims.
+        </p>
+        <p>Let’s work together to break chains, restore freedom, and create a future where exploitation has no place.
+        </p>
     </section>
 </main>
 

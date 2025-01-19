@@ -10,31 +10,58 @@ document.addEventListener("DOMContentLoaded", function () {
     const scenarios = JSON.parse(scenariosData.textContent);
     console.log("Loaded Scenarios:", scenarios);
 
-    let currentScenarioIndex = 0;
+    let currentScenarioIndex = null;
 
-    // Load a scenario and its choices dynamically
-    function loadScenario(index) {
-        if (index >= scenarios.length) {
-            console.error("Scenario index out of bounds:", index);
-            return;
-        }
+    const dashboard = document.getElementById("dashboard");
+    const scenarioView = document.getElementById("scenario-view");
+    const scenarioDiv = document.getElementById("scenario");
+    const choicesDiv = document.getElementById("choices");
+    const feedbackDiv = document.getElementById("feedback");
+    const backButton = document.getElementById("back-button");
+    const scenarioList = document.getElementById("scenario-list");
 
+    if (!dashboard || !scenarioView || !scenarioDiv || !choicesDiv || !feedbackDiv || !backButton || !scenarioList) {
+        console.error("One or more required DOM elements are missing!");
+        return;
+    }
+
+    function showDashboard() {
+        dashboard.style.display = "block";
+        scenarioView.style.display = "none";
+        scenarioList.innerHTML = "";
+    
+        scenarios.forEach((scenario, index) => {
+            const card = document.createElement("div");
+            card.className = "col-md-6 mb-4 scenario-card";
+            card.innerHTML = `
+                <img 
+                    src="/static/images/scenario-${index + 1}.jpg" 
+                    alt="Scenario ${index + 1}" 
+                    class="img-fluid scenario-image" 
+                    data-scenario-index="${index}"
+                >
+            `;
+    
+            card.querySelector('img').addEventListener("click", () => showScenario(index));
+            scenarioList.appendChild(card);
+        });
+    }
+    
+
+    function showScenario(index) {
+        currentScenarioIndex = index;
         const scenario = scenarios[index];
-        console.log("Loading scenario:", scenario);
 
-        const scenarioDiv = document.getElementById("scenario");
-        const choicesDiv = document.getElementById("choices");
-        const feedbackDiv = document.getElementById("feedback");
+        dashboard.style.display = "none";
+        scenarioView.style.display = "block";
 
-        if (!scenarioDiv || !choicesDiv || !feedbackDiv) {
-            console.error("One or more DOM elements are missing!");
-            return;
-        }
+        scenarioDiv.innerHTML = `
+            <h2>Scenario ${index + 1}</h2>
+            <p>${scenario.scenario}</p>
+        `;
 
-        feedbackDiv.style.display = 'none';
-        scenarioDiv.innerHTML = `<p>${scenario.scenario}</p>`;
-        choicesDiv.innerHTML = '';
-
+        choicesDiv.innerHTML = "";
+        choicesDiv.style.display = "block"; // Ensure choices are visible
         scenario.choices.forEach((choice, idx) => {
             const button = document.createElement("button");
             button.className = "btn btn-secondary m-2";
@@ -42,31 +69,21 @@ document.addEventListener("DOMContentLoaded", function () {
             button.addEventListener("click", () => showFeedback(idx, scenario));
             choicesDiv.appendChild(button);
         });
+
+        feedbackDiv.style.display = "none";
     }
 
-    // Show feedback after a choice is clicked
     function showFeedback(choiceIndex, scenario) {
-        console.log(`User selected choice ${choiceIndex}:`, scenario.choices[choiceIndex]);
-
-        const feedbackDiv = document.getElementById("feedback");
-        const feedbackText = document.getElementById("feedback-text");
-        const choicesDiv = document.getElementById("choices");
-
-        feedbackText.textContent = `${scenario.feedback[choiceIndex]}\n\nKey Teaching Point: ${scenario.teachingPoint}`;
-        feedbackDiv.style.display = 'block';
-        choicesDiv.innerHTML = ''; // Clear choices after selection
+        feedbackDiv.style.display = "block";
+        feedbackDiv.innerHTML = `
+            <p id="feedback-text">${scenario.feedback[choiceIndex]}</p>
+            <p><strong>Key Teaching Point:</strong> ${scenario.teachingPoint}</p>
+        `;
+        choicesDiv.style.display = "none";
+        scenarioDiv.style.display = "block"; // Keep scenario visible
     }
 
-    // Handle "Next Scenario" button click
-    document.getElementById("next-button").addEventListener("click", () => {
-        currentScenarioIndex++;
-        if (currentScenarioIndex < scenarios.length) {
-            loadScenario(currentScenarioIndex);
-        } else {
-            document.getElementById("app").innerHTML = '<h2 class="text-center">Thank you for completing the simulator!</h2>';
-        }
-    });
+    backButton.addEventListener("click", showDashboard);
 
-    // Load the first scenario on page load
-    loadScenario(currentScenarioIndex);
+    showDashboard();
 });

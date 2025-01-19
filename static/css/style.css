@@ -18,9 +18,10 @@
     --accent-danger: #FF6F61; /* Red-Orange */
 }
 
-body {
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family:'Raleway', Arial, Helvetica, sans-serif;
 }
 
