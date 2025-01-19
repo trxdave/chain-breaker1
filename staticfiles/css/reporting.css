@@ -1,0 +1,91 @@
+/* about.css */
+
+/* General Page Styling */
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Section Header Styling */
+h1, h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1.5rem;
+}
+
+/* Paragraph and Text Styling */
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #004085;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #004085;
+    border-color: #003060;
+}
+
+/* Ensuring Footer Is Not Affected */
+footer {
+    /* Reset any unwanted styles here */
+    background-color: initial;
+    color: initial;
+    box-shadow: initial;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    h1, h3 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}

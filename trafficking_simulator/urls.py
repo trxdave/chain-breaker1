@@ -5,9 +5,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('simulator/', include('simulator.urls')),
     path('', include('home.urls')),  # Include the URLs for the home app
-    path('about/', include('about.urls')),  # Include the URLs for the about app
-    path('simulator/', include('simulator.urls')),  # Include the URLs for the simulation app
+    path('about/', include('about.urls')),  # Include the URLs for the about app  # Include the URLs for the simulation app
     path('resources/', include('resources.urls')),  # Include the URLs for the resources app
     path('results/', include('results.urls')),  # Include the URLs for the results app
 ]
@@ -16,3 +16,5 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
