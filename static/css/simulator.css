@@ -1,6 +1,6 @@
 :root {
     /* Background Colors */
-    --nav-bg:#1C1F33; /*Dark Dark Blue-Black */
+    --nav-bg: #1C1F33; /* Dark Dark Blue-Black */
     --bg-primary: #00509E; /* Dark Blue */
     --bg-secondary: #F5F9FF; /* Very Light Blue */
     --bg-neutral: #B3DFF2; /* Light Blue */
@@ -18,7 +18,7 @@
 
 .bg-image {
     background-image: url('/static/images/sim_bg.webp');
-    height: 100%;
+    min-height: 100vh; /* Ensuring the background image covers the full screen */
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,11 +51,11 @@ main {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color:var(--accent-danger);
+    color: var(--accent-danger);
 }
 
 p {
-    color:var(--text-secondary); 
+    color: var(--text-secondary);
 }
 
 #scenario {
@@ -81,14 +81,14 @@ button:hover {
 
 /* cards */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
     overflow: hidden;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
@@ -135,20 +135,16 @@ button:hover {
     height: 300px; /* Adjust height as needed */
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-#scenario-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
 
 @media (max-width: 768px) {
     .card {
         flex-basis: 100%;
         max-width: 100%;
+    }
+
+    #scenario-list {
+        gap: 10px;
     }
 }

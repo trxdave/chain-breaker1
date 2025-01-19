@@ -4,25 +4,23 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/simulator.css' %}">
 
-
 <main>
   <div class="bg-image"></div>
   <div class="container mt-5">
-      <div id="app">
-        <h1 class="text-center mb-5">Human Trafficking Awareness Simulator</h1>
+    <div id="app">
+      <h1 class="text-center mb-5">Human Trafficking Awareness Simulator</h1>
 
-        <!-- Dashboard: Scenario Cards -->
-        <div id="dashboard">
-          <div id="scenario-list" class="d-flex flex-wrap justify-content-center"></div>
-        </div>
+      <!-- Dashboard: Scenario Cards -->
+      <div id="dashboard">
+        <div id="scenario-list" class="d-flex flex-wrap justify-content-center"></div>
+      </div>
 
-        <!-- Scenario View -->
-        <div id="scenario-view" style="display: none;">
-          <div id="scenario" class="mt-4"></div>
-          <div id="choices" class="mt-3"></div>
-          <div id="feedback" class="mt-4"></div>
-          <button id="back-button" class="btn btn-secondary mt-3">Back to Scenarios</button>
-        </div>
+      <!-- Scenario View -->
+      <div id="scenario-view" style="display: none;">
+        <div id="scenario" class="mt-4"></div>
+        <div id="choices" class="mt-3"></div>
+        <div id="feedback" class="mt-4"></div>
+        <button id="back-button" class="btn btn-secondary mt-3" aria-label="Back to List">Back to Scenarios</button>
       </div>
     </div>
   </div>
