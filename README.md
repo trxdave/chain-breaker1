@@ -1,19 +1,44 @@
-
 <p align="center">
   <img src="">
 </p>
 
+# ![Logo](static/images/readme_images/chain_breakers.png)
 ## Introduction
 
-Welcome to Chain Breakers! We are Hack to Hope and this project was created as part of the "Code to Protect" hackathon in January 2025 hosted by Code Institute. This hackathon is aligned with National Slavery and Human Trafficking Prevention Month, and our goal is to shine a light on the realities of human trafficking and empower communities to recognize and respond to potential red flags.
+## **Hack for Hope: Submission Details**  
+
+### **Deployment**   
+The project is deployed and can be accessed at: [Chain Breakers Live Site](https://chain-breaker-a367b4614472.herokuapp.com/)
+
+The team's Kanban board: [GitHub Project Board](https://github.com/trxdave/chain-breaker1.git)
+
+---
+
+Welcome to Chain Breakers! We are Hack to Hope, and this project was created as part of the "Code to Protect" hackathon in January 2025 hosted by Code Institute. This hackathon is aligned with National Slavery and Human Trafficking Prevention Month, and our goal is to shine a light on the realities of human trafficking and empower communities to recognize and respond to potential red flags.
 
 Our project focuses on interactive trafficking scenarios designed to raise awareness and educate users about the warning signs of human trafficking. By presenting realistic situations, we aim to teach people how to identify troubling patterns and learn effective ways to seek help or intervene. Ultimately, we believe that knowledge is a powerful tool in preventing exploitation and safeguarding vulnerable individuals.
 
-View the live site here: [Chain Breakers]()
+View the live site here: [Chain Breakers](https://chain-breaker-a367b4614472.herokuapp.com/)
+
+![Mockup image](static/images/readme_images/home_responsive.png)
 
 ---
 
 ## Table of Contents
+1. [Overview](#overview)
+2. [Key Features](#key-features)
+3. [User Experience (UX Design)](#user-experience-ux-design)
+4. [Pages](#pages)
+5. [Technologies Used](#technologies-used)
+6. [Deployment](#deployment)
+7. [Testing](#testing)
+8. [Future Development Plans](#future-development-plans)
+9. [Team](#team)
+10. [Credits](#credits)
+11. [Acknowledgement](#acknowledgement)
+
+---
+
 ## Overview
 
 **Chain Breakers** is a barrier-free informational platform dedicated to raising awareness about modern slavery and human trafficking. With a focus on ease of access, our site requires no user accounts or logins—ensuring that critical information and reporting tools are available to everyone without any obstacles.
@@ -21,15 +46,11 @@ View the live site here: [Chain Breakers]()
 ### Key Features
 
 - **Realistic Scenarios**: Explore situation-based examples that highlight common red flags and forms of exploitation, helping individuals recognize warning signs.
-- **Educational Resources**: Access infographics, and statistics to deepen understanding of human trafficking and how to combat it.
+- **Educational Resources**: Access infographics and statistics to deepen understanding of human trafficking and how to combat it.
 - **Open Access**: All content and tools on **Chain Breakers** are publicly available—no sign-ups or personal information required.
 - **Responsive Design**: The platform is optimized for all major browsers and devices, providing a seamless experience anytime, anywhere.
 
-Our mission is to **inform, educate, and empower** individuals to take meaningful action against modern slavery and human trafficking. By removing barriers to information and reporting, **Chain Breakers** aspires to be a readily accessible resource for anyone committed to understanding, preventing, and stopping human trafficking.
-
-### Responsive Image
-
-To ensure that our content is accessible and visually appealing across all devices, **Chain Breakers** utilizes responsive images. This means that images on our platform automatically adjust to fit the screen size of the device being used, whether it's a smartphone, tablet, or desktop computer.
+---
 
 ### User Experience (UX Design)
 
@@ -40,141 +61,170 @@ To ensure that our content is accessible and visually appealing across all devic
 - As an educator, I want to access resources and scenarios to teach others about human trafficking.
 - As a volunteer, I want to find organizations and hotlines to offer my support.
 
-### Project Management
+---
 
-For more details on our project progress and to contribute, visit our GitHub project board: [Chain Breakers Project Board](https://github.com/users/trxdave/projects/8)
+### Pages
 
-### Design
+#### Home Page
 
-#### Color and Typography
+![Home Page Screen Capture](static/images/readme_images/home-page.png)
 
-Our design philosophy prioritizes clarity and accessibility. We use a clean, modern color palette and typography to ensure that our content is easy to read and visually engaging.
+#### About Page
 
-- **Color Palette**: We use a combination of calming blues and vibrant accents to create a welcoming and trustworthy atmosphere. The primary colors are:
-  - **Primary Blue**: #1E90FF
-  - **Accent Orange**: #FFA500
-  - **Neutral Gray**: #F5F5F5
+![About Page Screen Capture](static/images/readme_images/about-page.png)
 
-- **Typography**: Our font choices are selected for readability and professionalism. We use:
-  - **Headings**: 'Roboto', sans-serif
-  - **Body Text**: 'Open Sans', sans-serif
+#### Simulator Page
 
-These design choices help to create a cohesive and user-friendly experience, making it easier for users to engage with our content and resources.
+![Simulator Page Screen Capture](static/images/readme_images/simulator-page.png)
+
+#### Resources Page
+
+![Resources Page Screen Capture](static/images/readme_images/resources-page.png)
+
+#### Reporting Page
+
+![Reporting Page Screen Capture](static/images/readme_images/reporting-page.png)
+
+#### Meet the Team Page
+
+![Meet the Team Page Screen Capture](static/images/readme_images/meettheteam-page.png)
 
 ### Wireframes
 
-#### Desktop
+Here are the wireframes for the main pages of the project:
 
-![Desktop Wireframe](path/to/desktop-wireframe.png)
+- **Homepage**  
+  ![Homepage Wireframe](static/images/readme_images/wireframe/homepage_720.png)
 
-#### Mobile
+- **About Page**  
+  ![About Page Wireframe](static/images/readme_images/wireframe/about_720.png)
 
-![Mobile Wireframe](path/to/mobile-wireframe.png)
+- **Resources Page**  
+  ![Resources Page Wireframe](static/images/readme_images/wireframe/resources_720.png)
 
-#### Tablet
+- **Simulator Page**  
+  ![Simulator Page Wireframe](static/images/readme_images/wireframe/simulator_720.png)
 
-![Tablet Wireframe](path/to/tablet-wireframe.png)
+- **Reporting Page**  
+  ![Reporting Page Wireframe](static/images/readme_images/wireframe/reporting_720.png)
 
+- **Meet the Team Page**  
+  ![Meet the Team Wireframe](static/images/readme_images/wireframe/meet_the_team_720.png)
 
-### Technologies Used
+---
+
+## Technologies Used
 
 **Chain Breakers** leverages a combination of modern web technologies to deliver a seamless and engaging user experience. The primary technologies used in this project include:
 
-#### Languages
-
-- **HTML** 
-- **CSS** 
-- **JavaScript**
+### 💻 Tech Stack  
+- **Frontend**: HTML, CSS, JavaScript  
+- **Version Control**: Git & GitHub  
+- **Deployment**: Heroku  
+- **Other Tools**: 
+  - Bootstrap CDN - [Bootstrap Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+  - [Font Awesome CDN](https://cdnjs.com/libraries/font-awesome)
+  - [Google Fonts](https://fonts.google.com)
+  - [Three.js](https://threejs.org/)
 
 #### Frameworks, Libraries, and Programs
 
-To build a robust and scalable platform, **Chain Breakers** utilizes a variety of frameworks, libraries, and programs. These tools help streamline development, enhance functionality, and ensure a smooth user experience.
+- **Django**: For backend development.
+- **React**: For dynamic and responsive components.
+- **Bootstrap**: For responsive design.
 
-#### Frameworks
+---
 
-- **Django**: A high-level Python web framework that encourages rapid development and clean, pragmatic design. Django is used for the backend development of **Chain Breakers**, providing a secure and scalable foundation for the application.
+## Deployment
 
-#### Libraries
+### GitHub Deployment
 
-- **React**: A JavaScript library for building user interfaces. React is used to create dynamic and responsive components, enhancing the interactivity of the platform.
-- **Bootstrap**: A front-end framework for developing responsive and mobile-first websites. Bootstrap is used to ensure that **Chain Breakers** is visually appealing and accessible across all devices.
+GitHub is used for version control and collaboration. The codebase for **Chain Breakers** is hosted on GitHub, allowing contributors to submit pull requests for review.
 
-#### Programs
+### Heroku Deployment
 
-- **Heroku**: A cloud platform that enables developers to build, run, and operate applications entirely in the cloud. **Chain Breakers** is deployed on Heroku, allowing for easy scaling and management of the application.
-- **GitHub**: A platform for version control and collaboration. The project's codebase is hosted on GitHub, facilitating collaboration among team members and contributors.
+Heroku provides robust infrastructure for deployment. The deployment process includes:
+1. Creating a Heroku app.
+2. Connecting the GitHub repository.
+3. Configuring environment variables.
+4. Deploying the app.
 
-By leveraging these frameworks, libraries, and programs, **Chain Breakers** is able to deliver a powerful and user-friendly platform dedicated to raising awareness about human trafficking and modern slavery.
+---
 
-By combining these technologies, **Chain Breakers** is able to provide an informative, accessible, and user-friendly platform dedicated to raising awareness about human trafficking and modern slavery.
+## Testing
 
-### Deployment
+### Lighthouse Testing
 
-#### GitHub Deployment
+We use Lighthouse for performance, accessibility, and SEO audits to ensure a high-quality user experience.
 
-GitHub is used for version control and collaboration, making it easy for multiple developers to work on the project simultaneously. The codebase for **Chain Breakers** is hosted on GitHub, where contributors can clone the repository, make changes, and submit pull requests. This workflow ensures that all changes are reviewed and approved before being merged into the main branch, maintaining the integrity and stability of the project.
+![Lighthouse Testing](static/images/readme_images/testing_images/lighthouse.png)
 
-#### Heroku Deployment
+### Manual Testing
 
-Heroku is a cloud platform that allows developers to deploy, manage, and scale applications. **Chain Breakers** is deployed on Heroku, which provides a seamless deployment process and robust infrastructure. By using Heroku, the project benefits from automated deployments, easy scaling, and integrated monitoring tools. This ensures that the application remains performant and available to users at all times.
+Manual testing was conducted on various devices and browsers to ensure compatibility and responsiveness.
 
-To deploy **Chain Breakers** on Heroku, the following steps are typically followed:
+### Automated Testing
 
-1. **Create a Heroku App**: Initialize a new application on the Heroku platform.
-2. **Connect to GitHub**: Link the Heroku app to the GitHub repository for continuous deployment.
-3. **Configure Environment Variables**: Set up necessary environment variables for the application to run.
-4. **Deploy the Application**: Push the code to Heroku, which automatically builds and deploys the application.
-5. **Monitor and Scale**: Use Heroku's monitoring tools to keep track of the application's performance and scale resources as needed.
+Unit tests, integration tests, and end-to-end tests were implemented to ensure the codebase remains stable.
 
-By leveraging GitHub for version control and Heroku for deployment, **Chain Breakers** ensures a streamlined development process and a reliable, scalable platform for users.
+---
 
-### Testing
+### Homepage Colors  
 
-#### Lighthouse Testing
+The homepage uses a carefully curated color palette to ensure accessibility, readability, and aesthetic appeal. Each color in the palette has a specific role, enhancing the user experience through visual hierarchy and design consistency.
 
-We use Lighthouse, an open-source, automated tool for improving the quality of web pages. It provides audits for performance, accessibility, progressive web apps, SEO, and more. The results help us identify areas for improvement to ensure a high-quality user experience.
+- **Platinum (#D6D9E0):** A soft neutral shade used for background elements.  
+- **Davy's Gray (#4F4F4F):** A dark gray tone utilized for text or secondary components.  
+- **Space Cadet (#1C1F33):** A deep blue for headers and primary accents.  
+- **Amber (#FFC107):** A vibrant yellow to highlight calls to action and interactive elements.  
+- **Bittersweet (#FF6F61):** A warm red for attention-grabbing components, such as alerts or buttons.
 
-![Lighthouse Testing](path/to/lighthouse-testing.png)
+![Colors](static/images/readme_images/color.png)
 
-#### Manual Testing
+---
 
-Manual testing is conducted to ensure that all features work as expected and to identify any issues that automated tests might miss. This includes testing on various devices and browsers to ensure compatibility and responsiveness.
+## Future Development Plans
 
-![Manual Testing](path/to/manual-testing.png)
+- **Expanded Scenario Library**: More nuanced situations covering various forms of trafficking and exploitation.
+- **Comprehensive Resource Directory**: A curated list of hotlines, organizations, and campaigns.
+- **Localization**: Offer content in multiple languages.
+- **Offline Access Options**: Features for downloading or printing critical information.
 
-#### Automatic Testing
+---
 
-Automated tests are implemented to verify that the codebase remains stable and functional as new features are added. These tests include unit tests, integration tests, and end-to-end tests, which are run regularly to catch any regressions.
+## Team
 
-![Automatic Testing](path/to/automatic-testing.png)
+- [Noah Al-Samawi](https://github.com/Noah-Samawi)
+- [David Cotter](https://github.com/trxdave) 
+- [Riman Farhood](https://github.com/rimanfarhood)
+- [Laura Hall](https://github.com/laurachri-hall)
+- [Sonali Patni](https://github.com/SonaliP11)
 
-#### CSS Validator
+---
 
-We use the W3C CSS Validation Service to check the validity of our CSS code. This helps us ensure that our stylesheets are free of errors and adhere to web standards, contributing to a consistent and reliable user experience.
+## Credits
 
-![CSS Validator](path/to/css-validator.png)
+We utilized a variety of tools and platforms to create and enhance our project. Here's a breakdown:
+- **[Venngage Infographics](https://infograph.venngage.com/):** To create engaging and visually appealing infographics.
+- **Photoshop:** For editing and enhancing pictures.
+- **Adobe Firefly:** Generating AI-based graphics and visuals.
+- **[favicon.io](https://favicon.io/):** Creating the project's favicon.
+- **[logo.com](https://logo.com/):** Designing the project logo.
+- **Perplexity AI:** Assisting with content creation and research.
+- **ChatGPT:** Contributing to content generation and editing.
+- **[Pexels](https://pexels.com/):** Source for the resources and reporting images used in the project.
+These tools collectively helped us bring our vision to life with a polished and professional finish.
+logo.comlogo.com
+Logo Maker | Create a free logo in minutes | LOGO.com
+LOGO.com’s #1 rated logo maker is fun, easy to use, and free. Create custom logos with unlimited designs to choose from. Over 200 million logos generated! (16 kB)
+https://logo.com/):**
 
-#### HTML Validator
+---
 
-The W3C Markup Validation Service is used to validate our HTML code. This ensures that our markup is correct and follows web standards, which is crucial for accessibility, SEO, and overall site performance.
+## Acknowledgement
 
-![HTML Validator](path/to/html-validator.png)
+We extend our heartfelt gratitude to the following:
 
-### Future Development Plans
-
-- **Expanded Scenario Library**: Add more nuanced situations covering various forms of trafficking and exploitation.
-- **Comprehensive Resource Directory**: Curate a list of hotlines, organizations, and campaigns for further support or volunteer opportunities.
-- **Localization**: Offer content in multiple languages to extend reach and accessibility.
-- **Offline Access Options**: Explore features for downloading or printing essential information for those with limited internet access.
-
-Through these initiatives, **Chain Breakers** aims to serve as a go-to, no-barrier resource for awareness, education, and direct action in the fight against modern slavery and human trafficking.
-
-### Acknowledgement
-
-We would like to extend our heartfelt gratitude to the following individuals and organizations for their invaluable contributions to the **Chain Breakers** project:
-
-- **Code Institute**: For organizing the "Code to Protect" hackathon and providing a platform for innovative solutions.
-- **Hack to Hope Team**: For their dedication, creativity, and hard work in bringing this project to life.
-- **Subject Matter Experts**: For their insights and guidance on human trafficking and modern slavery.
-
-
+- **Code Institute**: For organizing the "Code to Protect" hackathon.
+- **Hack to Hope Team**: For their dedication and hard work.
+- **Subject Matter Experts**: For their invaluable insights on human trafficking and modern slavery.
