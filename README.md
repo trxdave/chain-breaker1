@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="">
-</p>
 
 # ![Logo](static/images/readme_images/chain_breakers.png)
 ## Introduction
