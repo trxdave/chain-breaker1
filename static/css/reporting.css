@@ -2,8 +2,8 @@
 
 :root {
     /* Background Colors */
-    --nav-bg: #1C1F33; /* Dark Dark Blue-Black */
-    --bg-primary: #00509E; /* Dark Blue */
+    --nav-bg:#1C1F33; /*Dark Dark Blue-Black */
+    --bg-card: #90d885; /* Dark Blue */
     --bg-secondary: #F5F9FF; /* Very Light Blue */
     --bg-neutral: #B3DFF2; /* Light Blue */
 
@@ -18,68 +18,16 @@
     --accent-danger: #FF6F61; /* Red-Orange */
 }
 
-
-h1, h2 {
-    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+div.card-body {
+    background-color: var(--nav-bg);
 }
 
-h3, h4, h5, h6 {
-    font-family: 'Exo 2', Arial, Helvetica, sans-serif;
+.card-title  {
+    color: #c7cbe4;
 }
 
-
-/* Card Styling */
-.card {
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    border: 2px solid transparent;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.card:hover {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-
-}
-
-.card h5 {
-    margin-bottom: 1rem;
-}
-
-.card p {
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.card a {
-    color: var(--accent-primary);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.card a:hover,
-.card a:focus {
-    color: var(--accent-danger);
-    text-decoration: underline;
-}
-
-/* Resources Card Styling */
-.links-card {
-    background-color: var(--text-muted);
+.reportlink {
     color: var(--text-secondary);
-    padding: 1.5rem;
 }
 
-.resources-card {
-    background-color: var(--accent-secondary);
-    color: var(--text-secondary);
-    padding: 1.5rem;
-}
 
-.informed-card {
-    background-color: var(--text-primary);
-    color: var(--text-secondary);
-    padding: 1.5rem;
-}

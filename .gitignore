@@ -8,4 +8,7 @@ node_modules/
 .github/
 *.pyc
 __pycache__/
-cloudinary_python.txtenv.py
+cloudinary_python.txt
+env.py
+notes.txt
+

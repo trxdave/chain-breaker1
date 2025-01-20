@@ -18,7 +18,7 @@
 
 .bg-image {
     background-image: url('/static/images/sim_bg.webp');
-    min-height: 100vh; /* Ensuring the background image covers the full screen */
+    min-height: 100vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,11 +37,11 @@ main {
 }
 
 #app {
-    max-width: 600px;
+    max-width: 800px;
     width: 90%;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(28, 31, 51, 1);
+    background: rgba(28, 31, 51, 0.9);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -71,80 +71,86 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: var(--accent-secondary);
     color: #fff;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--bg-primary);
 }
 
-/* cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-body {
-    padding: 15px;
-}
-
-.card-title {
-    margin-bottom: 10px;
-}
-
-.card-text {
-    margin-bottom: 15px;
-}
-
-#scenario-list {
+#scenario-list .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    margin: 0 -15px;
 }
 
-.card {
-    flex-basis: calc(50% - 20px);
-    max-width: calc(50% - 20px);
-}
-
-.scenario-card {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.scenario-card:hover {
-    transform: scale(1.05);
+#scenario-list .col-md-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 15px;
+    margin-bottom: 20px;
 }
 
 .scenario-image {
-    width: 100%;
-    height: 300px; /* Adjust height as needed */
+    width: 80%;
+    padding: 2px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
-@media (max-width: 768px) {
-    .card {
-        flex-basis: 100%;
+.scenario-image:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#choices button {
+    background-color: var(--bg-primary);
+    margin: 5px 0;
+}
+
+#choices button:hover {
+    background-color: var(--accent-secondary);
+}
+
+#feedback {
+    background-color: var(--bg-secondary);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#feedback p {
+    color: var(--text-primary);
+}
+
+#back-button {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+#back-button:hover {
+    background-color: #e0a800;
+}
+
+@media (max-width: 992px) {
+    #scenario-list .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    #scenario-list .col-md-4 {
+        flex: 0 0 100%;
         max-width: 100%;
     }
-
-    #scenario-list {
-        gap: 10px;
+    
+    #app {
+        width: 95%;
+        padding: 15px;
     }
 }

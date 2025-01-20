@@ -25,7 +25,6 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -82,29 +81,30 @@
     <!-- Footer -->
     <footer class="py-5 text-light">
         <div class="container">
-            <div class="row">
+            <div id="first" class="row">
                 <!-- Reporting Information -->
                 <div class="col-md-4 mb-4">
                     <h5 class="text-heading">Report Modern Slavery</h5>
                     <p>
                         <strong>UK:</strong><br>
-                        Modern Slavery Helpline: <span class="text-warning">08000 121 700</span><br>
-                        Police: <span class="text-warning">101</span> or <span class="text-danger">999</span> (emergency).
+                        Modern Slavery Helpline: <span id="span">08000-121-700</span>
+                        <br>
+                        Police: <span id="span">101</span> or <span id="span">999</span> (emergency).
                     </p>
                     <hr class="footer_hr">
-                    <p>
+                    <p id="footer-p">
                         <strong>EU:</strong><br>
                         National Hotlines: 
-                        <a href="https://home-affairs.ec.europa.eu/policies/internal-security/organised-crime-and-human-trafficking/together-against-trafficking-human-beings/national-hotlines_en" 
-                            class="text-warning" target="_blank" rel="noopener noreferrer">Click Here</a><br>
-                        Emergency: <span class="text-danger">112</span>.
+                        <a id="a" href="https://home-affairs.ec.europa.eu/policies/internal-security/organised-crime-and-human-trafficking/together-against-trafficking-human-beings/national-hotlines_en" 
+                             target="_blank" rel="noopener noreferrer">Click Here</a><br>
+                        Emergency: <span id="span">112</span>.
                     </p>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="col-md-4 mb-4">
                     <h5 class="text-heading">Quick Links</h5>
-                    <ul class="list-unstyled">
+                    <ul id="ul" class="list-unstyled">
                         <li><a href="{% url 'home' %}" class="text-decoration-none text-light">Home</a></li>
                         <li><a href="{% url 'about' %}" class="text-decoration-none text-light">About</a></li>
                         <li><a href="{% url 'simulator' %}" class="text-decoration-none text-light">Simulator</a></li>
@@ -114,12 +114,12 @@
                 </div>
 
                 <!-- Developer Info -->
-                <div class="col-md-4 mb-4">
+                <div class="dev-info col-md-4 mb-4">
                     <h5 class="text-heading">About Us</h5>
                     <p>
                         Dedicated to combating human trafficking and modern slavery.<br>
                          <!-- Add the link to Meet the Team -->
-                        <a href="{% url 'meet_the_team' %}" class="text-warning">Meet the Team</a>.
+                        <a id="a" href="{% url 'meet_the_team' %}">Meet the Team</a>.
                     </p>
                     <p>&copy; 2025 Chain Breakers. All Rights Reserved.</p>
                 </div>
