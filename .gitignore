@@ -9,3 +9,6 @@ node_modules/
 *.pyc
 __pycache__/
 cloudinary_python.txt
+env.py
+notes.txt
+
