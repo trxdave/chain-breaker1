@@ -1,7 +1,7 @@
 :root {
     /* Background Colors */
     --nav-bg:#1C1F33; /*Dark Dark Blue-Black */
-    --bg-primary: #00509E; /* Dark Blue */
+    --bg-card: #90d885; /* Dark Blue */
     --bg-secondary: #F5F9FF; /* Very Light Blue */
     --bg-neutral: #B3DFF2; /* Light Blue */
 
@@ -15,4 +15,17 @@
     --accent-secondary: #2C85FD; /* Bright Blue */
     --accent-danger: #FF6F61; /* Red-Orange */
 }
+
+div.card-body {
+    background-color: var(--nav-bg);
+}
+
+.card-title  {
+    color: #c7cbe4;
+}
+
+.reportlink {
+    color: var(--text-secondary);
+}
+
 

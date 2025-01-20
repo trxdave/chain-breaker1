@@ -8,7 +8,7 @@
     --bg-neutral: #B3DFF2; /* Light Blue */
 
     /* Text Colors */
-    --text-primary: #4F4F4F; /* Dark Gray */
+    --text-primary: #111; /* Dark Gray */
     --text-secondary: #D6D9E0; /* Light Gray */
     --text-muted: #017374; /* Teal */
 
@@ -231,8 +231,8 @@ main {
 }
 
 .btn-resources {
-    background-color: var(--accent-secondary);
-    color:var(--text-secondary)
+    background-color: #90d885;
+    color: ;
 }
 
 .btn-simulator:hover,
@@ -271,17 +271,25 @@ footer p {
     width: 60%;
 }
 
-footer a {
-    color: var(--text-secondary);
-    transition: color 0.3s ease;
+#span, #a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:var(--accent-primary);
+    text-decoration: none;
+    
 }
 
-footer a:hover {
-    color: var(--accent-danger);
+#a {
+    font-style: italic;
+}
+
+#first.p {
+    padding-left: 0;
 }
 
 footer .row > div {
-    padding-right: var(--spacing-medium);
+    /* padding-left: var(--spacing-medium); */
     border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -289,35 +297,16 @@ footer .row > div:last-child {
     border-right: none;
 }
 
-footer a {
-    color: var(--text-secondary); /* Light Gray for Default Links */
-    letter-spacing: 1px;
-    font-weight: 400;
-    font-size: large;
-    transition: color 0.3s ease;
-    text-decoration: none; /* No underline */
+#ul.a {
+    padding: 3px;
+    font-style: italic;
+    color: var(--accent-primary);
+
 }
 
-footer a:hover,
-footer a:focus {
-    color: var(--accent-danger) !important; /* Orange for Hover/Focus */
-}
 
-footer .text-warning {
-    color: var(--accent-primary); /* Yellow for Important Links */
-    font-weight: bold;
-}
 
-footer .text-warning:hover,
-footer .text-warning:focus {
-    color: var(--accent-danger) !important; /* Orange on Hover/Focus */
-    text-decoration: underline; /* Optional for emphasis */
-}
 
-footer .text-danger {
-    color: var(--accent-danger); /* Red for Emergency Numbers */
-    font-weight: bold;
-}
 
 @media screen and (max-width: 425px) {
     #cover-text {
