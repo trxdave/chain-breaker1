@@ -7,8 +7,10 @@
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Chain Breakers is dedicated to combating modern slavery and human trafficking through awareness, simulations, and resources.">
-    <meta name="keywords" content="Modern Slavery, Human Trafficking, Awareness, Simulation, Resources, Anti-Slavery, Anti-Trafficking">
+    <meta name="description"
+        content="Chain Breakers is dedicated to combating modern slavery and human trafficking through awareness, simulations, and resources.">
+    <meta name="keywords"
+        content="Modern Slavery, Human Trafficking, Awareness, Simulation, Resources, Anti-Slavery, Anti-Trafficking">
     <meta name="author" content="Chain Breakers Team">
 
     <!-- Favicon -->
@@ -23,7 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,17 +38,19 @@
 <body>
 
     <!-- Navigation -->
-  
+
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="{% static 'images/cb_logo.webp' %}" alt="Chain Breakers Logo" width="30" id="logo_font">Chain Breakers
+                <img src="{% static 'images/cb_logo.webp' %}" alt="Chain Breakers Logo" width="30" id="logo_font">Chain
+                Breakers
             </a>
 
             <!-- Toggler Button -->
-            <button id="toggler-nav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="toggler-nav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -53,30 +58,36 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
+                            href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}" href="{% url 'about' %}">About</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}"
+                            href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'simulator' %}active{% endif %}" href="{% url 'simulator' %}">Simulator</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'simulator' %}active{% endif %}"
+                            href="{% url 'simulator' %}">Simulator</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'resources' %}active{% endif %}" href="{% url 'resources' %}">Resources</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'resources' %}active{% endif %}"
+                            href="{% url 'resources' %}">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.resolver_match.url_name == 'results' %}active{% endif %}" href="{% url 'results' %}">Reporting</a>
+                        <a class="nav-link {% if request.resolver_match.url_name == 'results' %}active{% endif %}"
+                            href="{% url 'results' %}">Reporting</a>
                     </li>
                 </ul>
             </div>
+        </div>
     </nav>
 
     <!-- Main Content -->
-   
-        {% block content %}
-        <!-- Dynamic content will be inserted here -->
-        {% endblock content %}
-   
+
+    {% block content %}
+    <!-- Dynamic content will be inserted here -->
+    {% endblock content %}
+
 
     <!-- Footer -->
     <footer class="py-5 text-light">
@@ -90,6 +101,9 @@
                         Modern Slavery Helpline: <span id="span">08000-121-700</span>
                         <br>
                         Police: <span id="span">101</span> or <span id="span">999</span> (emergency).
+                        Modern Slavery Helpline: <span class="text-warning">08000 121 700</span><br>
+                        Police: <span class="text-warning">101</span> or <span class="text-danger">999</span>
+                        (emergency).
                     </p>
                     <hr class="footer_hr">
                     <p id="footer-p">
@@ -98,6 +112,10 @@
                         <a id="a" href="https://home-affairs.ec.europa.eu/policies/internal-security/organised-crime-and-human-trafficking/together-against-trafficking-human-beings/national-hotlines_en" 
                              target="_blank" rel="noopener noreferrer">Click Here</a><br>
                         Emergency: <span id="span">112</span>.
+                        National Hotlines:
+                        <a href="https://home-affairs.ec.europa.eu/policies/internal-security/organised-crime-and-human-trafficking/together-against-trafficking-human-beings/national-hotlines_en"
+                            class="text-warning" target="_blank" rel="noopener noreferrer">Click Here</a><br>
+                        Emergency: <span class="text-danger">112</span>.
                     </p>
                 </div>
 
@@ -120,6 +138,8 @@
                         Dedicated to combating human trafficking and modern slavery.<br>
                          <!-- Add the link to Meet the Team -->
                         <a id="a" href="{% url 'meet_the_team' %}">Meet the Team</a>.
+                        <!-- Add the link to Meet the Team -->
+                        <a href="{% url 'meet_the_team' %}" class="text-warning">Meet the Team</a>.
                     </p>
                     <p>&copy; 2025 Chain Breakers. All Rights Reserved.</p>
                 </div>
