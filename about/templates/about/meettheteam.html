@@ -1,9 +1,10 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block title %}Meet the Team{% endblock %}
 
 {% block content %}
+
 <!-- Stylesheet -->
 <link rel="stylesheet" href="{% static 'css/meettheteam.css' %}">
 
@@ -23,6 +24,8 @@
                 <h5>Noah Al-Samawi</h5>
                 <p>Junior Full-Stack Software Developer passionate about crafting intuitive user interfaces and seamless backends.</p>
                 <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/noah-al-samawi-058583197/"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/Noah-Samawi"><i class="fab fa-github"></i></a>
                 </div>
@@ -64,23 +67,15 @@
                 </div>
             </div>
         </div>
-        <!-- Member 5 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <img src="{% static 'images/riman.jpg' %}" class="card-img-top" alt="Member 5">
-                <div class="card-body">
-                    <h5 class="card-title">Member 5</h5>
-                    <p class="card-text">Data Analyst providing insights for informed decision-making.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Member 6 -->
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="card h-100 shadow-sm">
-                <img src="{% static 'images/member6.jpg' %}" class="card-img-top" alt="Member 6">
-                <div class="card-body">
-                    <h5 class="card-title">Member 6</h5>
-                    <p class="card-text">Full-Stack Developer combining front-end and back-end skills.</p>
+        <!-- Team Member 5 -->
+        <div class="team-card">
+            <img src="{% static 'images/sonali.png' %}" alt="Sonali Patni">
+            <div class="card-body">
+                <h5>Sonali Patni</h5>
+                <p>Front-End Developer skilled in HTML, CSS, and JavaScript. Working to improve my Django skills step by step!</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sonalipatni/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/SonaliP11"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>

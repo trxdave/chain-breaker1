@@ -136,6 +136,8 @@ button:hover {
     background-color: #e0a800;
 }
 
+
+
 @media (max-width: 992px) {
     #scenario-list .col-md-4 {
         flex: 0 0 50%;
