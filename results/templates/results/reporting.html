@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/reporting.css' %}">
 
 <link rel="stylesheet" href="{% static 'css/reporting.css' %}">
 
 
 <main id="reporting-modern-slavery" class="mt-4">
+
     <div class="container mt-5">
         <!-- Heading Section -->
         <section id="reporting-heading">
@@ -63,17 +65,18 @@
             </div>
         </section>
 
-<!-- Additional Information Section -->
-<section id="additional-info" class="bg-light py-5 px-4 rounded shadow-sm">
-    <div class="container">
-        <!-- Title and Intro -->
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h4 id="additional-info-title" class="mb-4">Additional Information</h4>
-            <p id="additional-info-intro">
-                You can also report modern slavery and human trafficking anonymously through the following channels.
-                Your contribution can make a significant difference in protecting vulnerable individuals.
-            </p>
-        </div>
+        <!-- Additional Information Section -->
+        <section id="additional-info" class="bg-light py-5 px-4 rounded shadow-sm">
+            <div class="container">
+                <!-- Title and Intro -->
+                <div class="mx-auto mb-5">
+                    <h4 id="additional-info-title" class="mb-2">Additional Information</h4>
+                    <p id="additional-info-intro">
+                        You can also report modern slavery and human trafficking anonymously through the following
+                        channels.
+                        Your contribution can make a significant difference in protecting vulnerable individuals.
+                    </p>
+                </div>
 
         <!-- Links and Resources -->
         <div class="row">

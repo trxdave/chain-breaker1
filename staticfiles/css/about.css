@@ -27,6 +27,10 @@ body {
     padding: 20px;
 }
 
+#about, #what-we-do, #why-this-matters, #our-mission {
+    border-bottom: 2px solid var(--nav-bg);
+}
+
 #cover-text h2 {
     font-size: 3rem;
     font-weight: bold;

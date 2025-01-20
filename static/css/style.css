@@ -305,9 +305,6 @@ footer .row > div:last-child {
 }
 
 
-
-
-
 @media screen and (max-width: 425px) {
     #cover-text {
         width: 90%; /* Cover most of the screen width */
