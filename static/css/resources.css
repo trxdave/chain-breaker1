@@ -18,10 +18,9 @@
 
 
 
-h1, h2 {
+h1 {
     font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
     font-size: 3rem;
-    color: var(--accent-danger);
 }
 
 h3, h4, h5, h6 {
@@ -73,3 +72,14 @@ h3, h4, h5, h6 {
 
 
 
+.btn-resources {
+    background-color: var(--accent-secondary);
+    color:#1C1F33!important;
+}
+
+.btn-resources:hover,
+.btn-resources:active {
+    background-color: var(--text-secondary);
+    color:var(--accent-primary);
+    transform: scale(1.1); 
+}
